@@ -1,4 +1,7 @@
 *{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
 }
@@ -10,7 +13,19 @@ body{
     width: 200;
     height: 200;
 }
-ul{
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+#menu-h ul{
+    max-width: 800;
+    list-style: none;
+    padding: 0;
+}
+#menu-h ul li{
+    display: inline;
+}
+
+/*ul{
     margin: 0;
     padding: 0;
 }
@@ -26,5 +41,4 @@ li a{
     background: #903;
     text-decoration: none;
     color: #fff;
-    -web
 }
