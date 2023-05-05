@@ -1,0 +1,19 @@
+body{
+    background-color: azure;
+}
+
+#logo{
+    padding: 5px;
+    display: flex;
+    height: 100px;
+    background-color:#8b4513;
+}
+#lista{
+    line-height: 110px;
+    
+}
+nav{
+    background-color: #8b4513;
+    width: 150px;
+    height: 678px;
+}
