@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    width: 83px;
+    height: 91px;
+}
+.fundo{
+    background-image: url(img_coffe/pp_parede.jpeg);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 1512px;
+    height: 982px;
+}
+
+body{
+    font-size: 100%;
+}
