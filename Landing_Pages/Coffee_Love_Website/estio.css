@@ -3,20 +3,35 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-.logo{
-    position: absolute;
-    width: 83px;
-    height: 91px;
-}
-.fundo{
-    background-image: url(img_coffe/pp_parede.jpeg);
-    background-repeat: no-repeat;
-    display: flex;
-    width: 1512px;
-    height: 982px;
+    list-style: none;
 }
 
 body{
-    font-size: 100%;
+    background-image: url(img_coffe/pp_parede.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; /*Faz com que cubra todo o espaco disponivel na tela*/
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(13, 13, 16, 0.553);
+    padding: 30px;
+    width: 130px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(13, 13, 16, 0.553);
+    padding: 30px;
+    width: 130px;
+}
+
+.item{
+    list-style: none;
+    text-decoration:none ;
+    display: flex;
+    margin-top: 83px;
+    color: black;
 }
