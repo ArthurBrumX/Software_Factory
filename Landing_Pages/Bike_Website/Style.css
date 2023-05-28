@@ -1,0 +1,52 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    
+}
+body{
+    display: flex;
+    background-color: grey;
+}
+
+#logo{
+    display: flex;
+    margin-right: 20%;
+    margin-top: 5px;
+    width: 120px;
+    height: 110px;
+}
+
+#letras {
+    background-color:aqua ;
+    display: flex;
+    flex-direction:row;
+    padding: 5px;
+    line-height: 50px;
+    list-style: none;
+}
+
+/*#menu-h {
+    display: flex;
+    background-color: chartreuse;
+}
+
+#menu-h ul{
+    display: flex;
+    background-color: blueviolet;
+}
+
+#menu-h ul li{
+    display: flex;
+    background-color: aqua;
+}*/
+
+#menu-h ul li a {
+    display: flex;
+    padding: 50px;
+    line-height: 50%;
+    font-size: 15px;
+
+}

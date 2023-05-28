@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo{
+    
+}
+
+.menu{
+
+}
+
+.menu-lateral{
+    width: 273px;
+    height: 900px;
+    background-color: #002436;
+
+}
+
+.menu-lateral-opcoes{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.menu-lateral-opcoes-unidade{
+
+}
+
+.img-menu{
+    position: absolute; /*pra mexer o item pra baixo*/
+    top: 50%; /*pra mexer o item pra baixo*/
+}
