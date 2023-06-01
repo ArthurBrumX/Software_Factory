@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url(img_coffe/pp_parede.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; /*Faz com que cubra todo o espaco disponivel na tela*/
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(13, 13, 16, 0.553);
+    padding: 30px;
+    width: 130px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(13, 13, 16, 0.553);
+    padding: 30px;
+    width: 130px;
+}
+
+.item{
+    list-style: none;
+    text-decoration:none ;
+    display: flex;
+    margin-top: 83px;
+    color: black;
+}
+
+.conteudo{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+
+.discaimer{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
