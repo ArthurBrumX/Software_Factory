@@ -137,6 +137,93 @@ body{
     font-weight: bolder;
     text-transform: uppercase;
 }
+/*----------------------------------------------------------------*/
+/*cartao recolhidos*/
+
+.cartao{
+    background-color: aqua;
+    display: inline;
+    margin-top: 80px;
+    margin-left: 500px;
+    align-items: center;
+    width: 419px;
+    max-height: 219px;
+    
+}
+
+.recolhidos{
+    background-color: blueviolet;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 280px;
+    margin-left: 170px;
+    position: relative;
+}
+
+.cartao_interno{
+    background-color: purple;
+    position: absolute;
+
+}
+
+.adm{
+    background-color: teal;
+    color: aliceblue;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 100px;
+    margin-right: 300px;
+
+}
+
+/*fim recolhidos*/
+
+/*------------------------------------------------------------------*/
+
+/*saldo_total*/
+
+.cartao_1{
+    background-color: springgreen;
+    display: inline;
+    margin-bottom: 200px;
+    margin-left: 1070px;
+    align-items: center;
+    width: 419px;
+    max-height: 219px;
+    
+}
+
+.saldo_total{
+    background-color: salmon;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 280px;
+    margin-left: 170px;
+    position: relative;
+}
+
+.cartao_interno_1{
+    background-color: blue;
+    position: absolute;
+
+}
+
+.adm_1{
+    background-color: silver;
+    color: aliceblue;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 100px;
+    margin-right: 300px;
+
+}
+
+/*fim Saldo_total*/
+
+
+
 /*RODAPÉ*/
 .rodape{
     left: 40%;
