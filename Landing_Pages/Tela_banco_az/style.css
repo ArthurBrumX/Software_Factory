@@ -140,17 +140,20 @@ body{
 /*----------------------------------------------------------------*/
 /*cartao recolhidos*/
 
-.cartao{
+/*.cartao{
     background-color: aqua;
-    display: inline;
+    display: flex;
+    
     margin-top: 80px;
     margin-left: 500px;
     align-items: center;
     width: 419px;
     max-height: 219px;
     
-}
+    
+}*/
 
+/*
 .recolhidos{
     background-color: blueviolet;
     text-decoration: none;
@@ -176,25 +179,27 @@ body{
     margin-right: 300px;
 
 }
-
+*/
 /*fim recolhidos*/
 
 /*------------------------------------------------------------------*/
 
+
 /*saldo_total*/
 
-.cartao_1{
+/*.cartao_1{
     background-color: springgreen;
-    display: inline;
+    display: flex;
+
     margin-bottom: 200px;
     margin-left: 1070px;
     align-items: center;
     width: 419px;
     max-height: 219px;
-    
-}
 
-.saldo_total{
+}*/
+
+/*.saldo_total{
     background-color: salmon;
     text-decoration: none;
     display: flex;
@@ -221,6 +226,69 @@ body{
 }
 
 /*fim Saldo_total*/
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+.conteiner{
+    display: flex; /*Deixa o item movimentavel*/
+    justify-content: center; /*alinha o item no centro*/
+    justify-content: space-around; /*Abre espaço entre eles*/
+    margin-top: 60px;
+}
+
+.cartao_1{
+    background-color: #002436;
+    height: 190px; /*Tamnho*/
+    width: 300px; /*largura*/
+    padding: 10px; /*espaco interno*/
+    margin-left: 200px; /*espaço da borda*/
+    border-radius: 20px; /*Borda Arredondada*/
+    
+}
+
+.cartao_2{
+    background-color: #002436;
+    height: 190px; /*Tamanho*/
+    width: 300px; /*Largura*/
+    padding: 10px; /*espaco interno*/
+    border-radius: 20px; /*borda arredondado*/
+}
+
+.logo_az_cartao{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-around;
+
+}
+
+.logo-cartao{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.adm{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 8px;
+}
+.adm_letra{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
