@@ -1,0 +1,430 @@
+:root{
+    --cor-fundo-menu: rgb(0, 36, 54);
+    --cor-laranja-az: rgb(239, 78, 35);
+}
+.bg{
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.35;
+    position: absolute;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tomorrow', serif;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.menulateral{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    height: 100%;
+    background-color: var(--cor-fundo-menu);
+    transition: 0.2s all ease;
+}
+.menulateral .listamenu{
+    display: flex;
+    flex-flow: column;  
+    list-style-type: none;
+    justify-content: space-between;
+}
+/*AJUSTE VETOR DA LOGO AZ MERIT*/
+.menulateral .listamenu .logoazmerit{
+/* AZ merit */
+    position: relative;
+    margin-left: -15px;
+}
+.menulateral .listamenu .itemlista{
+    margin-top: 50px;
+    padding-top: auto;
+    width: 100%;
+}
+.menulateral .listamenu .itemlista .itemmenu{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+}
+.menulateral .listamenu .itemlista .itemmenu .textoicon{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px 15px;
+    margin-left: 50px;
+    border-radius: 30px;
+}
+.menulateral .listamenu .itemlista .itemmenu .icon{
+    width: 25px;
+    height: 25px;
+}
+
+
+/*Propriedades do hover*/
+.menulateral .listamenu .itemlista .itemmenu:hover{
+    color: var(--cor-laranja-az);
+}
+.menulateral .listamenu .itemlista .itemmenu:hover .pathicon{
+    fill: var(--cor-laranja-az);
+}
+
+
+/*Tamanho das Ondas*/
+.menulateral .logout_div{
+    position: relative;
+    height: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+/*Estilo das Ondas https://www.cssscript.com/animated-waves-svg/*/
+.logout_div .waves{
+    position: relative;
+    height: 10vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 550px;
+}
+
+.parallax > use{
+    animation: move-forever 10s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1){
+    animation-delay: -1s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(2){
+    animation-delay: -7s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3){
+    animation-delay: -5s;
+    animation-duration: 10s;
+}
+@keyframes move-forever{
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% { 
+        transform: translate3d(85px,0,0);
+    }
+}
+  /*Shrinking for mobile*/
+@media (max-width: 768px){
+    .waves {
+        height:40px;
+        min-height:40px;
+    }
+}
+
+.logout_div .boxlogout{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--cor-laranja-az);
+}
+.logout_div .boxlogout .itemlogout{
+    position: fixed;
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    bottom: 5%;
+}
+.logout_div .boxlogout .itemlogout .iconlogout{
+    width: 25px;
+    height: 25px;
+}
+.logout_div .boxlogout .itemlogout .textologout{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px 15px;
+    margin-left: 50px;
+    border-radius: 30px;
+}
+
+
+
+/*CABEÇALHO*/
+.cabecalho{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    height: 100px;
+    margin-left: 100px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--cor-laranja-az);
+}
+/*CAIXA COM FOTO E NOME DO USUÁRIO*/
+.cabecalho .user_box{
+    position: fixed;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cabecalho .user_box .nome_user{
+    font-size: 16px;
+    font-weight: bold;
+}
+.cabecalho .user_box .img_user{
+    width: 84px;
+    height: 84px;
+    padding-left: 10px;
+    border-radius: 50%;
+}
+/*CAIXA QUE INDICA PÁGINA ATUAL*/
+.tela_atual{
+    margin-top: 70px;
+    margin-left: 160px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+/*RODAPÉ*/
+.rodape{
+    left: 40%;
+    bottom: 0%;
+    z-index: 0;
+    opacity: 0.35;
+    padding: auto;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+/*.box_feedback{
+    position: fixed;
+    width: 80vw;
+    height: 50vh;
+    background-color: red;
+    margin-left: 300px;
+    margin-top: 3%;
+}*/
+
+/*inicio cartao*/
+
+.conteiner-titulo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.letra_titulo_uni_1{
+    margin-left: 150px;
+}
+
+.letra_titulo_uni_2{
+    margin-left: 400px;
+}
+
+.conteiner_cartao{
+    display: flex; /*Deixa o item movimentavel*/
+    justify-content: center; /*alinha o item no centro*/
+    justify-content: space-around; /*Abre espaço entre eles*/
+    margin-top: 10px;
+}
+
+.cartao_1{
+    background-color: #002436;
+    height: 190px; /*Tamnho*/
+    width: 300px; /*largura*/
+    padding: 10px; /*espaco interno*/
+    margin-left: 200px; /*espaço da borda*/
+    border-radius: 20px; /*Borda Arredondada*/
+    
+}
+
+.cartao_2{
+    background-color: #002436;
+    height: 190px; /*Tamanho*/
+    width: 300px; /*Largura*/
+    padding: 10px; /*espaco interno*/
+    border-radius: 20px; /*borda arredondado*/
+}
+
+.logo_az_cartao{
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+}
+
+.logo-cartao{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.merit_letra{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.barra{
+    margin-left: 130px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #FF4242;
+}
+
+.logo_final{
+    height: 9px;
+    margin-top: 18px;
+}
+
+.adm{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 8px;
+}
+.adm_letra{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+/*fim cartao*/
+
+/*------------------------------------------------------*/
+
+/*inicio sera*/
+
+#arrowAnim {
+    width: 10vw;
+    height: vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow {
+    width: 3vw;
+    height: 3vw;
+    border: 1vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(-45deg);
+  }
+  
+  
+  .arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+            animation: slide 4s linear infinite;
+  }
+  
+  .delay1 {
+    -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+  }
+  .delay2 {
+    -webkit-animation-delay: 2s; 
+      animation-delay: 2s;
+  }
+  .delay3 {
+    -webkit-animation-delay: 3s; 
+      animation-delay: 3s;
+  }
+  
+  @-webkit-keyframes slide {
+      0% { opacity:0; transform: translateX(15vw); }	
+     20% { opacity:1; transform: translateX(9vw); }	
+     80% { opacity:1; transform: translateX(-9vw); }	
+    100% { opacity:0; transform: translateX(-15vw); }	
+  }
+  @keyframes slide {
+      0% { opacity:0; transform: translateX(15vw); }	
+     20% { opacity:1; transform: translateX(9vw); }	
+     80% { opacity:1; transform: translateX(-9vw); }	
+    100% { opacity:0; transform: translateX(-15vw); }	
+  }
+
+/*Fim Seta*/
+
+
+/*Inicio bolinhas*/
+
+.conteiner_bolinha_1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.bolinha_uma{
+    display: flex;
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 15px;
+}
+
+.bolinha_1{
+    background-color: #002436;
+    z-index: 2;
+    border-radius: 110px;
+    padding: 100px;
+    width: 10px;
+    height: 10px;
+    border: 10px solid #827e7e;
+}
+
+/*-------------------------------------------------------*/
+
+.conteirner_bolinha_2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.bolinha_duas{
+    display: flex;
+    width: 200px;
+    margin-left: 357px;
+}
+
+.bolinha_2{
+    background-color: #002436;
+    z-index: 2;
+    border-radius: 100px;
+    padding: 90px;
+    margin-left: 290px;
+    width: 10px;
+    height: 10px;
+    border: 10px solid #827e7e;
+}
+
+
+
+
+
+
+
+
+
+/*RODAPÉ*/
+.rodape{
+    left: 40%;
+    bottom: 0%;
+    z-index: 0;
+    opacity: 0.35;
+    padding: auto;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}

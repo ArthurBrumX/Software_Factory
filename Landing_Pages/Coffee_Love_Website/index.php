@@ -12,11 +12,11 @@
         <img class="logo" src="img_coffe/Logo_coffe.png" alt="Carregando..."> <!--Adcionar uma imagem-->
         <nav class="cabecalho-menu"> <!--Navegacao-->
             <ul class="cabecalho-menu-item">
-                <li><a class="item" href="index.html">Home</a></li> <!--Ancora/link para outra pagina-->
-                <li><a class="item" href="promocoes.html">Promoções</a></li><!--Ancora/link para outra pagina-->
-                <li><a class="item" href="cardapio.html">Cardápio</a></li><!--Ancora/link para outra pagina-->
-                <li><a class="item" href="contato.html">contato</a></li><!--Ancora/link para outra pagina-->
-                <li><a class="item" href="login.html">Login</a></li><!--Ancora/link para outra pagina-->
+                <li><a class="item" href="index.php">Home</a></li> <!--Ancora/link para outra pagina-->
+                <li><a class="item" href="promocoes.php">Promoções</a></li><!--Ancora/link para outra pagina-->
+                <li><a class="item" href="cardapio.php">Cardápio</a></li><!--Ancora/link para outra pagina-->
+                <li><a class="item" href="contato.php">contato</a></li><!--Ancora/link para outra pagina-->
+                <li><a class="item" href="login.php">Login</a></li><!--Ancora/link para outra pagina-->
             </ul>
         </nav>
     </header>
