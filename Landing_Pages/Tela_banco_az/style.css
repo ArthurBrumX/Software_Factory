@@ -206,22 +206,39 @@ body{
     color: rgb(0, 0, 0);
 }
 
-.box_feedback{
+/*.box_feedback{
     position: fixed;
     width: 80vw;
     height: 50vh;
     background-color: red;
     margin-left: 300px;
     margin-top: 3%;
-}
+}*/
 
 /*inicio cartao*/
+
+.conteiner-titulo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.letra_titulo_uni_1{
+    margin-left: 150px;
+}
+
+.letra_titulo_uni_2{
+    margin-left: 400px;
+}
 
 .conteiner_cartao{
     display: flex; /*Deixa o item movimentavel*/
     justify-content: center; /*alinha o item no centro*/
     justify-content: space-around; /*Abre espaço entre eles*/
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .cartao_1{
@@ -229,7 +246,7 @@ body{
     height: 190px; /*Tamnho*/
     width: 300px; /*largura*/
     padding: 10px; /*espaco interno*/
-    margin-left: 150px; /*espaço da borda*/
+    margin-left: 200px; /*espaço da borda*/
     border-radius: 20px; /*Borda Arredondada*/
     
 }
@@ -282,17 +299,63 @@ body{
     text-decoration: none;
     font-size: 13px;
 }
+/*fim cartao*/
 
-.seta{
+/*------------------------------------------------------*/
+
+/*inicio sera*/
+
+#arrowAnim {
+    width: 10vw;
+    height: vh;
     display: flex;
     justify-content: center;
-    height: 50px;
-    width: 20px;
-    margin-top: 80px;
+    align-items: center;
+  }
+  
+  .arrow {
+    width: 3vw;
+    height: 3vw;
+    border: 1vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(-45deg);
+  }
+  
+  
+  .arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+            animation: slide 4s linear infinite;
+  }
+  
+  .delay1 {
+    -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+  }
+  .delay2 {
+    -webkit-animation-delay: 2s; 
+      animation-delay: 2s;
+  }
+  .delay3 {
+    -webkit-animation-delay: 3s; 
+      animation-delay: 3s;
+  }
+  
+  @-webkit-keyframes slide {
+      0% { opacity:0; transform: translateX(15vw); }	
+     20% { opacity:1; transform: translateX(9vw); }	
+     80% { opacity:1; transform: translateX(-9vw); }	
+    100% { opacity:0; transform: translateX(-15vw); }	
+  }
+  @keyframes slide {
+      0% { opacity:0; transform: translateX(15vw); }	
+     20% { opacity:1; transform: translateX(9vw); }	
+     80% { opacity:1; transform: translateX(-9vw); }	
+    100% { opacity:0; transform: translateX(-15vw); }	
+  }
 
-}
+/*Fim Seta*/
 
-/*fim cartao*/
 
 /*Inicio bolinhas*/
 
@@ -305,17 +368,18 @@ body{
 .bolinha_uma{
     display: flex;
     width: 200px;
-    margin-left: 800px;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-left: 200px;
+    margin-top: 15px;
 }
 
 .bolinha_1{
-    background-color: chartreuse;
-    border-radius: 50px;
-    padding: 10px;
+    background-color: #002436;
+    z-index: 2;
+    border-radius: 110px;
+    padding: 100px;
     width: 10px;
     height: 10px;
+    border: 10px solid #827e7e;
 }
 
 /*-------------------------------------------------------*/
@@ -329,16 +393,18 @@ body{
 .bolinha_duas{
     display: flex;
     width: 200px;
-    margin-left: 500px;
-    margin-top: 10px;
+    margin-left: 357px;
 }
 
 .bolinha_2{
-    background-color: steelblue;
-    border-radius: 50px;
-    padding: 10px;
+    background-color: #002436;
+    z-index: 2;
+    border-radius: 100px;
+    padding: 90px;
+    margin-left: 290px;
     width: 10px;
-    height: 10px;
+    height: 10px;
+    border: 10px solid #827e7e;
 }
 
 
