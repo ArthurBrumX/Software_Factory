@@ -7,7 +7,7 @@
 
 }
 
-div{
+section{
     background-color: aqua;
     position: relative;
     width: 100%;
@@ -17,4 +17,4 @@ div{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+}  
