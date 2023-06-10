@@ -1,0 +1,29 @@
+.imagem{
+    background-image: url("img/fund.jpg"); /*coloca uma imagem*/
+    height: 300px; /*Altura*/
+}
+
+.color{
+    background-color: blue; /*define cor de fundo*/
+    height: 300px; /*Altura*/
+}
+
+.size{
+    background-image: url("img/fund.jpg");/*Coloca Uma Imagem*/
+    background-size: 100px; /*Define o tamanho do elemento dentro da div*/
+    height: 300px;/*Altura*/
+}
+
+.position{
+    background-image: url("img/fund.jpg");/*Coloca Uma Imagem*/
+    background-position: center; /*Define a posicao que a umagem sera vista*/
+    height: 300px;/*Altura*/
+
+}
+
+.repeat{
+    background-image: url("img/fund.jpg"); /*Coloca Uma IMagem*/
+    background-repeat: no-repeat;/*Define se repete ou nao e para que posicao*/
+    height: 300px;/*Altura*/
+}
+

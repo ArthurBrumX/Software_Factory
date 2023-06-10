@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interno</title>
+
+    <!--Inicio do Css-->
+    <style>
+        .verde{
+            color: green;
+        }
+        .fonte{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font: 100;
+        }
+        .menor{
+            font-size: 15px;
+        }
+    </style>
+
+    <!--Fim Do Css-->
+</head>
+<body>
+    <div>
+        <h1>CSS Interno</h1>
+        <p>Basicamente CSS Interno nada mais é doque criar um paragrafo no head com a tag style e comecar a estilizar dentro
+            da pafina do html.
+        </p> 
+        <br>
+        <p class="verde">Por exemplo esse paragrafo foi pintado de verde pelo css que esta contido dentro desse mesmo arquivo</p>
+        <br>
+        <p class="fonte">Esse outro paragrafo teve sua fonte alterada pelo css que esta contido nesse mesmo arquivo</p>
+        <br>
+        <p class="menor">Esse paragrafo vai ficar menor em relacao aos outros, que tambem foi modificado dentro do mesmo css que esta nesse arquivo mesmo</p>
+        <br>
+        <p >Em outras palavras voce estiliza dentro do arquivo o css que voce quer pra aquele arquivo e apenas para esse arquivo
+            se ouver qualquer outro arquivo, ele nao herdará as propriedades do css que forem feitas dentro desse arquivo.
+        </p>
+        <br>
+        <p>O CSS interno tem o seu nivel de prioridade media, pois ele vem depois do inline, entao o seu nivel de prioridade
+            pelo codigo é medio ele só vai ser considerado se o inline nao existir.
+        </p>
+    </div>
+</body>
+</html>

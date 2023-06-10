@@ -1,0 +1,141 @@
+.borda1{
+    border: solid 10px;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: aqua;
+    /*-----------------------*/
+}
+
+.borda2{
+    border: dotted 10px;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    /*-----------------------*/
+}
+
+.borda3{
+    border: dashed 10px;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: yellow;
+    /*-----------------------*/
+}
+
+.borda4{
+    border: double 5px;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: brown;
+    /*-----------------------*/
+}
+.borda5{
+    border: groove 10px;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: teal;
+    /*-----------------------*/
+}
+
+.borda6{
+    border: ridge 10px;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: crimson;
+    /*-----------------------*/
+}
+
+.borda7{
+    border: inset 10px;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: steelblue;
+    /*-----------------------*/
+}
+
+.borda8{
+    border: outset 10px;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: yellowgreen;
+    /*-----------------------*/
+}
+
+.borda9{
+    border: none;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: slategray;
+    /*-----------------------*/
+}
+
+.borda10{
+    border: hidden;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: darkgreen;
+    /*-----------------------*/
+}
+
+.borda11{
+    border-radius: 10px;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: salmon;
+    /*-----------------------*/
+}
+
+.borda12{
+    border: solid;
+    border-color: brown;
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    /*-----------------------*/
+}
+
+.bordas_direcao{
+    border: solid;
+    border-top: color(salmon);
+
+    /*fazendo o elemento*/
+    margin-top: 10px;
+    width: 400px;
+    height: 250px;
+    /*-----------------------*/
+}
