@@ -1,0 +1,30 @@
+.botao{
+    /*cor de fundo do elemento*/
+    background-color: aqua;
+
+    /*largura e altura do elemento*/
+    height: 70px;
+    width: 120px;
+
+    /*Deixar a borda arredondada*/
+    border-radius: 20%;
+
+    /*espacamento do elemento em relacao a tela*/
+    margin-top: 20%;
+    margin-left:40%;
+}
+
+.link{
+    position: relative;
+    left: 20%;
+    top: 35%;
+    color: darkred;
+    
+}
+
+.botao:hover{
+    /*cor de fundo do elemento*/
+    background-color: blue;
+
+padding: 2px 2px 2px 2px;
+}
