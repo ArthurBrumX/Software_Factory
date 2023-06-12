@@ -43,17 +43,19 @@ body{
     position: relative;
     margin-top: 45%;
     height: 20%;
-
 }
 
 .logout-item{
-    color: white;
     background-color: blue;
     margin-top: 80%;
     margin-bottom: 75%;
     border-radius: 50px;
     width: 70%;
     margin-left: 15px;
+}
+
+.letras{
+    color: white;
 }
 
 /*-------------------------------------------*/

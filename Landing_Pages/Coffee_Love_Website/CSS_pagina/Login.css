@@ -15,7 +15,7 @@
 .conteudo{
     display: flex;
     margin-left: 35%;
-    margin-top: 10%;
+    margin-top: 8%;
     border-radius: 20%;
     background-color: rgba(0, 255, 255, 0.613);
     width: 13%;
@@ -25,13 +25,20 @@
 .form-group{
     text-decoration: none;
     align-items: center;
-    
     width: 250px;
     font-size: 20px;
 }
 
 .login{
-    
-    margin-top: 30px;
-    margin-left: 35%;
+    text-align: center;
+    background-color: blue;
+    border-radius: 30%;
+    margin-top: 30%;
+    margin-left: 25%;
+    width: 40%;
+    padding: 7% 7% 7% 7%;
+}
+
+.letra{
+    color: white;
 }
