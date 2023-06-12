@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url("img_coffe/pp_parede.jpeg");
+    background-image: url("../Img_Coffe/pp_parede.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -50,10 +50,31 @@ body{
     color: white;
     background-color: blue;
     margin-top: 80%;
-    margin-bottom: 200%;
+    margin-bottom: 75%;
     border-radius: 50px;
     width: 70%;
     margin-left: 15px;
 }
 
 /*-------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
