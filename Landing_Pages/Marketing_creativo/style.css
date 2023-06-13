@@ -19,14 +19,64 @@ body{
 }
 
 header{
+    /*Deixa os item desse elemento movimenyaveis*/
     display: flex;
-    flex-direction: row;
+
+    /*Determina a direcao em que os elementos ficaram*/
+    flex-direction: row; /*um do lado do outro*/
+
+    /*Cria uma distancia igual entre os elementos*/
     justify-content: space-between;
 
+    /*alinha os elementos*/
+    align-items: center;
 }
 
+#title{ 
+    flex-direction: column;
 
+    /*deixa a linha mais junto*/
+    line-height: 10px;
+}
 
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: rgb(132, 13, 201);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppislight;
+}
+
+img{
+    width: 580px;
+}
 
 
 
