@@ -33,6 +33,8 @@ header{
 }
 
 #title{ 
+
+    /*escolhe a direacao do display*/
     flex-direction: column;
 
     /*deixa a linha mais junto*/
@@ -45,6 +47,23 @@ li{
 }
 
 a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+#inscrevase-brt{
+    border: 2px solid rgb(132, 13, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscrevase-brt:hover{
+    background-color: rgb(132, 13, 201);
     color: white;
 }
 
@@ -76,6 +95,34 @@ p{
 
 img{
     width: 580px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 13, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
 }
 
 
