@@ -1,0 +1,58 @@
+*{ /*Vai Afetar tudo de uma vez*/
+    margin: 0; /*Todos os elementos teram 0 de margim*/
+    padding: 0; /*Todos os elesmentos teram 0 de padding*/
+}
+
+a{ /*Toda Tag a*/
+    color: #fff; /*Terá sua cor: */
+    text-decoration: none; /*nao terá nenhuma decoracao inicial*/
+    transition: 0.3s;
+
+}
+
+a:hover{ /*Quando o mouse for passado por cima faça: */
+    opacity: 0.7s; /*Opacidade do elemento*/
+}
+
+.logo{ /*mexendo na classe Logo*/
+    font-size: 24px; /*O tamanho da fonte da letra*/
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #23232e;
+    height: 8vh;
+}
+
+main{
+    background: url("img/bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+.nav-list{
+    list-style: none; /*pra tirar o ponto da lista*/
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
