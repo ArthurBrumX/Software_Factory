@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+/*Header - cabecalho*/
+body{
+    background-color: rgba(0, 128, 128, 0.692);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: springgreen;
+}
+
+.cabecalho-titulo{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.cabecalho-elementos{
+    display: flex;
+    margin-top: 2%; /*movimentando todo o elemento*/
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover{
+    color: blue;
+}
+
+.cabecalho-elementos-uni{
+    text-decoration: none;
+    list-style: none; /*para tirar o pontilhado da lista*/
+    margin-left: 5%;
+    margin-top: 2%;
+}
+/*Fim Header - cabecalho*/
+
+/*------------------------------------------*/
+
+/*Main*/
+
+.inteli{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.inteli-conteudo{
+    max-width: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.inteli-conteudo-uni{
+    text-align: justify;
+    max-width: 90%;
+}
+
+.inteli-img{
+    display: flex;
+    flex-direction: column;
+    border: solid aqua;
+    border-radius: 8%;
+    align-items: center;
+}
+
+img{
+    max-width: 90%;
+}
+
+.inteli-titulo-card{
+    text-align: center;
+}
+
+
+/*Fim Main*/
+
+/*footer*/
+
+/*Fim Footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
