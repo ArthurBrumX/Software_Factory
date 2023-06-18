@@ -164,7 +164,11 @@ a:hover{
 }
 
 img{
-    max-width: 50vh;
+    max-width: 90%;
+}
+
+#assistente-img{
+    margin-top: 3vh;
 }
 
 .inteli-titulo-card{
