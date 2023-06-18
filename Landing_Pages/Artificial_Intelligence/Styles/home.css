@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 /*Header - cabecalho*/
 body{
-    background-color: rgba(0, 128, 128, 0.692);
+    background-color: rgba(9, 151, 151, 0.712);
 }
 
 .cabecalho{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: springgreen;
+    background-color: rgba(0, 255, 128, 0.522);
+    height: 10vh;
 }
 
 .cabecalho-titulo{
     font-family: 'Montserrat', sans-serif;
     color: white;
+    margin-top: 15px;
 }
 
 .cabecalho-elementos{
@@ -30,19 +37,91 @@ a{
 
 a:hover{
     color: blue;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cabecalho-elementos-uni{
     text-decoration: none;
     list-style: none; /*para tirar o pontilhado da lista*/
     margin-left: 5%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 /*Fim Header - cabecalho*/
 
 /*------------------------------------------*/
 
 /*Main*/
+
+/*Titulo*/
+.titulo{
+    max-width: 45%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Fim titulo*/
+
+/*------------------------------------------*/
+
+/*cards*/
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.card{
+    height: 40vh;
+    width: 30vh;
+    color: white;
+}
+
+#card-1{
+    background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
+    background-position: center;
+}
+
+#card-2{
+    background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
+    background-position: center;
+}
+
+#card-3{
+    background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
+    background-position: center;
+}
+
+#card-4{
+    background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
+    background-position: center;
+}
+
+#card-5{
+    background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
+    background-position: center;
+}
+
+.card-titulo{
+    margin-top: 50%;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Fim Cards*/
+/*------------------------------------------*/
+
+/*Galeria de Fotos*/
+.titulo-galeria{
+    max-width: 16%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Fim Da galeria*/
+
+/*------------------------------------------*/
+
+/*As 5 ias mais conhecidas*/
 
 .inteli{
     display: flex;
@@ -76,7 +155,6 @@ img{
 .inteli-titulo-card{
     text-align: center;
 }
-
 
 /*Fim Main*/
 
