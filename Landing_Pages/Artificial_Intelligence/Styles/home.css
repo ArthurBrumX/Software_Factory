@@ -21,7 +21,7 @@ body{
 .cabecalho-titulo{
     font-family: 'Montserrat', sans-serif;
     color: white;
-    margin-top: 3vh;
+    margin-top: 4vh;
     font-size: 5vh;
 }
 
@@ -35,7 +35,6 @@ a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 3vh;
-    margin-bottom: 3vh;
 }
 
 a:hover{
