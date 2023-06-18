@@ -22,6 +22,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin-top: 15px;
+    font-size: 5vh;
 }
 
 .cabecalho-elementos{
@@ -33,6 +34,7 @@ a{
     color: white;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
 }
 
 a:hover{
@@ -54,10 +56,11 @@ a:hover{
 
 /*Titulo*/
 .titulo{
-    max-width: 45%;
+    max-width: 56%;
     margin: 0 auto;
     margin-top: 5%;
     font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
 }
 /*Fim titulo*/
 
@@ -79,26 +82,36 @@ a:hover{
 #card-1{
     background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
     background-position: center;
+    background-size: 70vh;
+    background-repeat: no-repeat;
 }
 
 #card-2{
     background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
     background-position: center;
+    background-size: 70vh;
+    background-repeat: no-repeat;
 }
 
 #card-3{
     background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
     background-position: center;
+    background-size: 70vh;
+    background-repeat: no-repeat;
 }
 
 #card-4{
     background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
     background-position: center;
+    background-size: 70vh;
+    background-repeat: no-repeat;
 }
 
 #card-5{
     background: linear-gradient(rgba(0,0,0.8), rgba(0,0,0,.8)), url("../Img/card.jpeg");
     background-position: center;
+    background-size: 70vh;
+    background-repeat: no-repeat;
 }
 
 .card-titulo{
@@ -112,10 +125,11 @@ a:hover{
 
 /*Galeria de Fotos*/
 .titulo-galeria{
-    max-width: 16%;
+    max-width: 20%;
     margin: 0 auto;
     margin-top: 5%;
     font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
 }
 
 /*Fim Da galeria*/
