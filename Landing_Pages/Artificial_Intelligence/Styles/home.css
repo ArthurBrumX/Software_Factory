@@ -115,7 +115,7 @@ a:hover{
 }
 
 .card-titulo{
-    margin-top: 100%;
+    margin-top: 50%;
     text-align:center;
     font-family: 'Montserrat', sans-serif;
     font-size: 3vh;
@@ -173,6 +173,10 @@ img{
 
 #reconhecimento-img{
     margin-top: 3vh;
+}
+
+#titulo-img{
+    margin-top: 2%;
 }
 
 .inteli-titulo-card{
