@@ -56,7 +56,7 @@ a:hover{
 
 /*Titulo*/
 .titulo{
-    max-width: 56%;
+    max-width: 60%;
     margin: 0 auto;
     margin-top: 5%;
     font-family: 'Montserrat', sans-serif;
@@ -77,6 +77,10 @@ a:hover{
     height: 40vh;
     width: 30vh;
     color: white;
+}
+
+.card:hover{
+    color: blue;
 }
 
 #card-1{
@@ -123,13 +127,210 @@ a:hover{
 /*Fim Cards*/
 /*------------------------------------------*/
 
-/*Galeria de Fotos*/
+/*titulo galeria*/
 .titulo-galeria{
-    max-width: 20%;
+    max-width: 25%;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 13%;
     font-family: 'Montserrat', sans-serif;
     font-size: 3vh;
+    background-color: darkslategray;
+    padding: 2%;
+    border-radius: 10%;
+}
+/*fim titulo galeria*/
+
+/*Galeria de Fotos*/
+
+.secao-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+
+.cards-img{
+    height: 40vh;
+    width: 30vh;
+    border: solid aqua;
+}
+
+.nome-img{
+    background-color: brown;
+    width: 6vh;
+}
+
+#foto-1{
+    background-image: url("../galeria/rota-5.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#foto-2{
+    background-image: url("../galeria/rota4.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#foto-3{
+    background-image: url("../galeria/rota-3.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+#foto-4{
+    background-image: url("../galeria/rota-2.png");
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+#foto-5{
+    background-image: url("../galeria/rota-1.webp");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#foto-6{
+    background-image: url("../galeria/assistente-1.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#foto-7{
+    background-image: url("../galeria/assistente-2.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#foto-8{
+    background-image: url("../galeria/assistente-3.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+#foto-9{
+    background-image: url("../galeria/assistente-4.png");
+    background-position: center;
+    background-size: 250%;
+    background-repeat: no-repeat;
+}
+
+#foto-10{
+    background-image: url("../galeria/assistente-5.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#foto-11{
+    background-image: url("../galeria/mecanisco-1.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-12{
+    background-image: url("../galeria/mecanismo-2.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#foto-13{
+    background-image: url("../galeria/mecanismo-3.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-14{
+    background-image: url("../galeria/mecanismo-4.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-15{
+    background-image: url("../galeria/mecanismo-5.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+#foto-16{
+    background-image: url("../galeria/reconhecimento-1.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-17{
+    background-image: url("../galeria/reconhecimento-2.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-18{
+    background-image: url("../galeria/reconhecimento-3.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-19{
+    background-image: url("../galeria/reconhecimento-4.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-20{
+    background-image: url("../galeria/reconhecimento-5.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-21{
+    background-image: url("../galeria/rota4.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-22{
+    background-image: url("../galeria/rota4.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-23{
+    background-image: url("../galeria/rota4.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-24{
+    background-image: url("../galeria/rota4.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#foto-25{
+    background-image: url("../galeria/rota4.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
 
 /*Fim Da galeria*/
