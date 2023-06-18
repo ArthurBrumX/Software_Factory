@@ -115,7 +115,7 @@ a:hover{
 }
 
 .card-titulo{
-    margin-top: 50%;
+    margin-top: 100%;
     text-align:center;
     font-family: 'Montserrat', sans-serif;
     font-size: 3vh;
@@ -169,10 +169,6 @@ img{
 
 #assistente-img{
     margin-top: 3vh;
-}
-
-#reconhecimento{
-    margin-top: 100%;
 }
 
 #reconhecimento-img{
