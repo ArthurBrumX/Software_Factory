@@ -785,6 +785,7 @@ img{
     .titulo-letra{
         color: white;
         background-color: rgba(0, 0, 255, 0.308);
+        font-size: 3vh;
     }
 }
 
@@ -813,7 +814,7 @@ img{
         margin: 0 auto;
         margin-top: 5%;
         font-family: 'Montserrat', sans-serif;
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
     .titulo-letra{
@@ -830,7 +831,7 @@ img{
         margin: 0 auto;
         margin-top: 5%;
         font-family: 'Montserrat', sans-serif;
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
     .titulo-letra{
@@ -847,7 +848,7 @@ img{
         margin: 0 auto;
         margin-top: 5%;
         font-family: 'Montserrat', sans-serif;
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
     .titulo-letra{
@@ -864,7 +865,7 @@ img{
         margin: 0 auto;
         margin-top: 5%;
         font-family: 'Montserrat', sans-serif;
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
     .titulo-letra{
@@ -874,8 +875,30 @@ img{
 }
 /*Fim titulo*/
 
-/*olá professora, nao consegui terminar a tempo a responsividade*/
-/*eu nao sabia como fazer exatamente até que aprendi mais o menos, mas ja tinha dado o prazo...*/
+/*Responsividade Cards*/
+
+@media(max-width: 1024px){
+    .cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    }
+
+    .card{
+        flex-direction: column;
+        display: flex;
+        height: 40vh;
+        width: 30vh;
+        color: white;
+    }
+
+    .card:hover{
+        color: blue;
+    }
+}
+
+
+/*Fim Responsividade cards*/
 
 
 
