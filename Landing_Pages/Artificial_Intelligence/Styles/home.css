@@ -408,9 +408,11 @@ img{
 }
 
 .imagem-demostrativa-historia{
-    position: relative;
-    left: 20vh;
-    top: 10vh;
+    background-image: url("../galeria/img-fundo-historia.jpg");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
 }
 
 /*Fim Historia das ias*/
