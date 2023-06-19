@@ -31,7 +31,7 @@ header{
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin-top: 4vh;
-    font-size: 5vh;
+    font-size: 3vh;
 }
 
 .cabecalho-elementos{
@@ -155,7 +155,7 @@ a:hover{
 .titulo-letra{
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 255, 0.308);
+    
 }
 /*fim titulo apresentacao*/
 
@@ -433,7 +433,7 @@ img{
     margin-left: 20vh;
     max-width: 150vh;
     font-size: 3vh;
-    color: blue;
+    color: blue;    
 }
 
 .imagem-demostrativa-historia{
@@ -442,7 +442,11 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     height: 70vh;
+
 }
+/*Fim Historia das ias*/
+
+/*Ias na atualidade*/
 
 .imagem-demostrativa-atualidade{
     background-image: url("../galeria/ia-na-atualidade.webp");
@@ -452,6 +456,10 @@ img{
     height: 70vh;
 }
 
+/*Fim IAs na atualidade*/
+
+/*futuro das IAs*/
+
 .imagem-demostrativa-futuro{
     background-image: url("../galeria/futuro.webp");
     background-size: 50%;
@@ -460,17 +468,306 @@ img{
     height: 70vh;
 }
 
-/*Fim Historia das ias*/
+/*Fim futuro das ias*/
 
 /*Fim Main*/
 
 /*footer*/
 
+.rodape{
+    left: 40%;
+    bottom: 0%;
+    z-index: 0;
+    opacity: 0.90;
+    padding: auto;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
 /*Fim Footer*/
 
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*Cabecalho responsivo*/
 
+/*max-width 1070px*/
 
+/*Cabecalho responsivo*/
+
+@media(max-width: 1070px){
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgba(0, 255, 128, 0.522);
+        height: 10vh;
+    }
+    
+    .cabecalho-titulo{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        margin-top: 4vh;
+        font-size: 3vh;
+    }
+    
+    .cabecalho-elementos{
+        display: flex;
+        margin-top: 2%; /*movimentando todo o elemento*/
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+        margin-right: 1vh;
+    }
+    
+    a:hover{
+        color: blue;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .cabecalho-elementos-uni{
+        text-decoration: none;
+        list-style: none; /*para tirar o pontilhado da lista*/
+        margin-left: 5%;
+        margin-right: 7vh;
+    }
+}
+
+/*max-width 1024px*/
+
+@media(max-width: 1024px){
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgba(0, 255, 128, 0.522);
+        height: 10vh;
+    }
+    
+    .cabecalho-titulo{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        margin-top: 4vh;
+        font-size: 3vh;
+    }
+    
+    .cabecalho-elementos{
+        display: flex;
+        margin-top: 2%; /*movimentando todo o elemento*/
+        margin-right: 5%;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+        margin-right: 2vh;
+    }
+    
+    a:hover{
+        color: blue;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .cabecalho-elementos-uni{
+        text-decoration: none;
+        list-style: none; /*para tirar o pontilhado da lista*/
+        margin-left: 5%;
+        margin-right: 7vh;
+    }
+}
+
+/*max-width 1000px*/
+
+@media(max-width: 1000px){
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgba(0, 255, 128, 0.522);
+        height: 10vh;
+    }
+    
+    .cabecalho-titulo{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        margin-top: 4vh;
+        font-size: 3vh;
+        display: none;
+    }
+    
+    .cabecalho-elementos{
+        display: flex;
+        margin-top: 3%; /*movimentando todo o elemento*/
+        margin-right: 5%
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+        margin-right: 1vh;
+    }
+    
+    a:hover{
+        color: blue;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .cabecalho-elementos-uni{
+        text-decoration: none;
+        list-style: none; /*para tirar o pontilhado da lista*/
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+}
+
+/*max-width 900px*/
+
+@media(max-width: 900px){
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgba(0, 255, 128, 0.522);
+        height: 10vh;
+    }
+    
+    .cabecalho-titulo{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        margin-top: 4vh;
+        font-size: 3vh;
+        display: none;
+    }
+    
+    .cabecalho-elementos{
+        display: flex;
+        margin-top: 3%; /*movimentando todo o elemento*/
+        margin-right: 12%;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+        margin-right: 1vh;
+    }
+    
+    a:hover{
+        color: blue;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .cabecalho-elementos-uni{
+        text-decoration: none;
+        list-style: none; /*para tirar o pontilhado da lista*/
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+}
+
+/*max-width 700px*/
+
+@media(max-width: 700px){
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgba(0, 255, 128, 0.522);
+        height: 10vh;
+    }
+    
+    .cabecalho-titulo{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        margin-top: 4vh;
+        font-size: 3vh;
+        display: none;
+    }
+    
+    .cabecalho-elementos{
+        display: flex;
+        margin-top: 3%; /*movimentando todo o elemento*/
+        margin-right: 12%;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2vh;
+        margin-right: 1vh;
+    }
+    
+    a:hover{
+        color: blue;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .cabecalho-elementos-uni{
+        text-decoration: none;
+        list-style: none; /*para tirar o pontilhado da lista*/
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+}
+
+/*max-width 500px*/
+
+@media(max-width: 500px){
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgba(0, 255, 128, 0.522);
+        height: 10vh;
+    }
+    
+    .cabecalho-titulo{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        margin-top: 4vh;
+        font-size: 3vh;
+        display: none;
+    }
+    
+    .cabecalho-elementos{
+        display: flex;
+        margin-top: 3%; /*movimentando todo o elemento*/
+        margin-right: 12%;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2vh;
+        margin-right: 1vh;
+    }
+    
+    a:hover{
+        color: blue;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .cabecalho-elementos-uni{
+        text-decoration: none;
+        list-style: none; /*para tirar o pontilhado da lista*/
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+}
+/*Fim Cabecalho Responsivo*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
