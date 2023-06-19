@@ -162,6 +162,8 @@ a:hover{
 .nome-img{
     margin-left: 3%;
     width: 27vh;
+    font-size: 2vh;
+    margin-top: 3%;
     text-align: center;
 }
 
