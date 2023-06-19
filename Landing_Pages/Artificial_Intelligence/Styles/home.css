@@ -418,6 +418,22 @@ img{
     height: 70vh;
 }
 
+.imagem-demostrativa-atualidade{
+    background-image: url("../galeria/ia-na-atualidade.webp");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.imagem-demostrativa-futuro{
+    background-image: url("../galeria/futuro.webp");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
 /*Fim Historia das ias*/
 
 /*Fim Main*/
