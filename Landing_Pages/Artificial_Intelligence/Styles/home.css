@@ -155,6 +155,7 @@ a:hover{
 .titulo-letra{
     text-align: center;
     color: white;
+    background-color: rgba(0, 0, 255, 0.308);
     
 }
 /*fim titulo apresentacao*/
@@ -722,7 +723,6 @@ img{
 }
 
 /*max-width 500px*/
-
 @media(max-width: 500px){
     .cabecalho{
         display: flex;
@@ -769,8 +769,113 @@ img{
 /*Fim Cabecalho Responsivo*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*Titulo responsivo*/
 
+/*max-width 1070px*/
+@media(max-width: 1070px){
 
+    .titulo{
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 5%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+    }
+
+    .titulo-letra{
+        color: white;
+        background-color: rgba(0, 0, 255, 0.308);
+    }
+}
+
+/*max-width 1024px*/
+@media(max-width: 1024px){
+
+    .titulo{
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 5%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+    }
+
+    .titulo-letra{
+        color: white;
+        background-color: rgba(0, 0, 255, 0.308);
+    }
+}
+
+/*max-width 1000px*/
+@media(max-width: 1000px){
+
+    .titulo{
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 5%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+    }
+
+    .titulo-letra{
+        color: white;
+        background-color: rgba(0, 0, 255, 0.308);
+    }
+}
+
+/*max-width 900px*/
+@media(max-width: 900px){
+
+    .titulo{
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 5%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+    }
+
+    .titulo-letra{
+        color: white;
+        background-color: rgba(0, 0, 255, 0.308);
+    }
+}
+
+/*max-width 700px*/
+@media(max-width: 700px){
+
+    .titulo{
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 5%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+    }
+
+    .titulo-letra{
+        color: white;
+        background-color: rgba(0, 0, 255, 0.308);
+    }
+}
+
+/*max-width 500px*/
+@media(max-width: 500px){
+
+    .titulo{
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 5%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+    }
+
+    .titulo-letra{
+        color: white;
+        background-color: rgba(0, 0, 255, 0.308);
+    }
+}
+/*Fim titulo*/
+
+/*olá professora, nao consegui terminar a tempo a responsividade*/
+/*eu nao sabia como fazer exatamente até que aprendi mais o menos, mas ja tinha dado o prazo...*/
 
 
 
