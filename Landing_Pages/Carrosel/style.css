@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center; /*alinha de acordo com sua direcao do justify content*/
+    justify-content: center;
+    background-color: aqua;
+}
+
+.section-carrosel{
+    background-color: burlywood;
+    height: 450px;
+    width: 1075px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.swiper{
+    background-color: brown;
+    width: 950px;
+
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+
+.section-carrosel .card-content .imagem{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.section-carrosel .card-content .imagem img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.card-content .media-icons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    align-items: center;
+    height: 40px;
+    justify-content: space-around;
+
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0,0.1);
+}
+
+.card-content .media-icons i{
+    color: blue;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+.card-content .media-icons i:hover{
+    opacity: 0.1;
+}
+
+.card .nome-cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    color: blueviolet;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card .rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .rating i{
+    color: chartreuse;
+    font-size: 22px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
