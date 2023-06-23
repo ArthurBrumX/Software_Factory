@@ -404,42 +404,34 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 
 .conteiner-titulo{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    justify-content: space-around;
     text-decoration: none;
     font-size: 10px;
     margin-top: 20px;
-}
-
-.letra_titulo_uni_1{
-    margin-left: 150px;
-}
-
-.letra_titulo_uni_2{
-    margin-left: 400px;
+    background-color: aqua;
+    width: 50%;
 }
 
 .conteiner_cartao{
     display: flex; /*Deixa o item movimentavel*/
     justify-content: center; /*alinha o item no centro*/
     justify-content: space-around; /*Abre espaço entre eles*/
-    margin-top: 10px;
 }
 
 .cartao_1{
     background-color: #002436;
-    height: 190px; /*Tamnho*/
-    width: 300px; /*largura*/
+    height: 20%; /*Tamnho*/
+    width: 30%; /*largura*/
     padding: 10px; /*espaco interno*/
-    margin-left: 200px; /*espaço da borda*/
     border-radius: 20px; /*Borda Arredondada*/
     
 }
 
 .cartao_2{
     background-color: #002436;
-    height: 190px; /*Tamanho*/
-    width: 300px; /*Largura*/
+    height: 20%; /*Tamanho*/
+    width: 30%; /*Largura*/
     padding: 10px; /*espaco interno*/
     border-radius: 20px; /*borda arredondado*/
 }
