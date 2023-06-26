@@ -282,7 +282,6 @@
     left: 300px;
     right: 50px;
     height: 75vh;
-    background-color: red;
     border-radius: 30px;
 }
 
@@ -406,8 +405,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
     flex-direction: row;
     justify-content: space-between;
     text-decoration: none;
-    font-size: 10px;
-    margin-top: 20px;
+    font-size: 70%;
     margin-left: 18vh;
     width: 100vh;
 }
@@ -422,7 +420,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
     background-color: #002436;
     height: 20%; /*Tamnho*/
     width: 30%; /*largura*/
-    padding: 10px; /*espaco interno*/
+    padding: 0.1%; /*espaco interno*/
     border-radius: 20px; /*Borda Arredondada*/
     
 }
@@ -430,8 +428,8 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 .cartao_2{
     background-color: #002436;
     height: 20%; /*Tamanho*/
-    width: 30%; /*Largura*/
-    padding: 10px; /*espaco interno*/
+    width: 32%; /*Largura*/
+    padding: 0.1%; /*espaco interno*/
     border-radius: 20px; /*borda arredondado*/
 }
 
@@ -479,56 +477,56 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 
 /*------------------------------------------------------*/
 
-/*inicio sera*/
+/*inicio seta*/
 
 #arrowAnim {
-    width: 10vw;
-    height: vh;
+    width: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .arrow {
-    width: 3vw;
-    height: 3vw;
+.arrow {
+    width: 2vw;
+    height: 2vw;
     border: 1vw solid;
     border-color: black transparent transparent black;
     transform: rotate(-45deg);
-  }
+}
   
   
-  .arrowSliding {
+.arrowSliding {
     position: absolute;
     -webkit-animation: slide 4s linear infinite; 
-            animation: slide 4s linear infinite;
-  }
-  
-  .delay1 {
+    animation: slide 4s linear infinite;
+    
+}
+
+.delay1 {
     -webkit-animation-delay: 1s; 
-      animation-delay: 1s;
-  }
-  .delay2 {
+    animation-delay: 1s;
+}
+.delay2 {
     -webkit-animation-delay: 2s; 
-      animation-delay: 2s;
-  }
-  .delay3 {
+    animation-delay: 2s;
+}
+.delay3 {
     -webkit-animation-delay: 3s; 
-      animation-delay: 3s;
-  }
+    animation-delay: 3s;
+}
   
-  @-webkit-keyframes slide {
-      0% { opacity:0; transform: translateX(15vw); }	
-     20% { opacity:1; transform: translateX(9vw); }	
-     80% { opacity:1; transform: translateX(-9vw); }	
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateX(15vw); }	
+    20% { opacity:0; transform: translateX(9vw); }	
+    80% { opacity:0; transform: translateX(-9vw); }	
     100% { opacity:0; transform: translateX(-15vw); }	
-  }
-  @keyframes slide {
-      0% { opacity:0; transform: translateX(15vw); }	
-     20% { opacity:1; transform: translateX(9vw); }	
-     80% { opacity:1; transform: translateX(-9vw); }	
-    100% { opacity:0; transform: translateX(-15vw); }	
-  }
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateX(15vw); }	
+    20% { opacity:0.1; transform: translateX(8vw); }	
+    80% { opacity:1; transform: translateX(-7vw); }	
+    100% { opacity:0; transform: translateX(-5vw); }	
+}
 
 /*Fim Seta*/
 
@@ -543,16 +541,16 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 
 .bolinha_uma{
     display: flex;
-    width: 200px;
-    margin-left: 200px;
-    margin-top: 15px;
+    width: %;
+    margin-left: px;
+    margin-top: px;
 }
 
 .bolinha_1{
     background-color: #002436;
     z-index: 2;
     border-radius: 110px;
-    padding: 100px;
+    padding: 12vh;
     width: 10px;
     height: 10px;
     border: 10px solid #827e7e;
@@ -570,14 +568,14 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
     display: flex;
     width: 200px;
     margin-left: 357px;
+    justify-content: space-around;
 }
 
 .bolinha_2{
     background-color: #002436;
     z-index: 2;
     border-radius: 100px;
-    padding: 90px;
-    margin-left: 290px;
+    padding: ;
     width: 10px;
     height: 10px;
     border: 10px solid #827e7e;
