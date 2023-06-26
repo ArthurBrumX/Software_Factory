@@ -414,22 +414,19 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
     display: flex; /*Deixa o item movimentavel*/
     justify-content: center; /*alinha o item no centro*/
     justify-content: space-around; /*Abre espaço entre eles*/
+    height: 35%;
 }
 
 .cartao_1{
     background-color: #002436;
-    height: 20%; /*Tamnho*/
-    width: 30%; /*largura*/
-    padding: 0.1%; /*espaco interno*/
+    padding: 1%; /*espaco interno*/
     border-radius: 20px; /*Borda Arredondada*/
     
 }
 
 .cartao_2{
     background-color: #002436;
-    height: 20%; /*Tamanho*/
-    width: 32%; /*Largura*/
-    padding: 0.1%; /*espaco interno*/
+    padding: 1%; /*espaco interno*/
     border-radius: 20px; /*borda arredondado*/
 }
 
@@ -442,7 +439,6 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 .logo-cartao{
     display: flex;
     margin-top: 15px;
-    margin-left: 15px;
 }
 
 .merit_letra{
@@ -465,13 +461,17 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 
 .adm{
     display: flex;
-    margin-top: 120px;
-    margin-left: 8px;
+    margin-left: 2%;
 }
 .adm_letra{
     color: white;
     text-decoration: none;
     font-size: 13px;
+}
+
+.valor-cartao{
+    text-align: center;
+    font-size: 5vh;
 }
 /*fim cartao*/
 
@@ -533,16 +533,18 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 
 /*Inicio bolinhas*/
 
+.bolinha-paragrafo{
+    text-align: center;
+    font-size: 15px;
+}
+
 .conteiner_bolinha_1{
     display: flex;
     justify-content: center;
-    justify-content: space-around;
 }
 
 .bolinha_uma{
     display: flex;
-    width: %;
-    margin-left: px;
     margin-top: px;
 }
 
@@ -550,34 +552,28 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
     background-color: #002436;
     z-index: 2;
     border-radius: 110px;
-    padding: 12vh;
-    width: 10px;
-    height: 10px;
+    padding: 6vh 8vh 6vh 8vh;
     border: 10px solid #827e7e;
 }
 
 /*-------------------------------------------------------*/
 
-.conteirner_bolinha_2{
+.conteiner_bolinhas_2{
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
 }
 
 .bolinha_duas{
     display: flex;
-    width: 200px;
-    margin-left: 357px;
-    justify-content: space-around;
+
 }
 
 .bolinha_2{
+    margin-left: 32vh;
     background-color: #002436;
     z-index: 2;
     border-radius: 100px;
-    padding: ;
-    width: 10px;
-    height: 10px;
+    padding: 7vh;
+    padding: 6vh 8vh 6vh 8vh;
     border: 10px solid #827e7e;
 }
 
