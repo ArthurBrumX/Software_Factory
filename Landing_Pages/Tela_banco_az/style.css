@@ -401,7 +401,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 
 
 .conteiner-titulo{
-    display: flex;
+    display: flex; 
     flex-direction: row;
     justify-content: space-between;
     text-decoration: none;
@@ -439,6 +439,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 .logo-cartao{
     display: flex;
     margin-top: 15px;
+    filter: opa;
 }
 
 .merit_letra{
@@ -457,21 +458,29 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 .logo_final{
     height: 9px;
     margin-top: 18px;
+    filter: invert(80%); /*para inverter a cor da imagem de preto para branco*/
 }
 
 .adm{
     display: flex;
     margin-left: 2%;
+    height: 5vh;
+    width: 13vh;
+    margin-bottom: 70px;
+
 }
 .adm_letra{
     color: white;
     text-decoration: none;
     font-size: 13px;
+    
 }
 
 .valor-cartao{
     text-align: center;
     font-size: 5vh;
+    color: #FF4242;
+    color: var(--cor-laranja-az);
 }
 /*fim cartao*/
 
@@ -536,6 +545,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 .bolinha-paragrafo{
     text-align: center;
     font-size: 15px;
+    color: var(--cor-laranja-az);
 }
 
 .conteiner_bolinha_1{
