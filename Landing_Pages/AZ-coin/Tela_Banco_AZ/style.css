@@ -253,7 +253,7 @@
     border-radius: 50%;
 }
 .cabecalho .tela_atual{
-    margin-top: 70px;
+    margin-top: 2%;
     margin-left: 60px;
     font-size: 20px;
     font-weight: bolder;
@@ -275,7 +275,7 @@
 }
 
 /*Propriedades da Página Exemplo*/
-.paginaexemplo{
+.Conteiner-principal{
     z-index: 0;
     position: fixed;
     width: auto;
