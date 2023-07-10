@@ -408,7 +408,6 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
     font-size: 70%;
     margin-left: 18vh;
     width: 100vh;
-    background-color: #FF4242;
 }
 
 .conteiner_cartao{
@@ -416,7 +415,6 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
     justify-content: center; /*alinha o item no centro*/
     justify-content: space-around; /*Abre espaço entre eles*/
     height: 35%;
-    background-color: aqua;
 }
 
 .cartao_1{
