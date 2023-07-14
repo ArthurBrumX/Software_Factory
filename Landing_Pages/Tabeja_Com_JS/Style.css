@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: crimson;
+}
+
+header{
+    background-color: darksalmon;
+    padding: 10px;
+    color: aliceblue;
+    text-align: 24px;
+    text-transform: uppercase;
+}
+
+main{
+    padding: 30px 50px;
+}
+
+.card{
+    background-color: rgb(240,212,201);
+    border: 1px solid coral;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lineInput{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input{
+    padding: 10px;
+    border: 1px solid coral;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.button{
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    background-color: chocolate;
+    color: aliceblue;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button:hover{
+    background-color: transparent;
+}
+
+.content{
+    margin-top: 15px;
+}
+
+.table{
+    border-collapse: collapse;
+    border: 1px solid coral;
+    width: 100%;
+}
+
+.table th{
+    border: 1px solid coral;
+}
+
+.table th td{
+    padding: 1px 5px;
+    text-align: left;
+}
+
+.center1{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

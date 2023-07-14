@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com JS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Lojinha Skiner</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de Produtos Lojinha Skiner</span>
+        </div>
+        <div class="card">
+            <div class="lineInput">
+                <label>Produto</label>
+                <input type="text" name="produto" id="produto" placeholder="nome do produto">
+            </div>
+            
+            <div class="lineInput">
+                <label>Preço</label>
+                <input type="text" name="preco" id="preco" placeholder="nome do produto">
+            </div>
+
+            <div class="botoes">
+                <button onclick="produto.salvar()"> Salvar </button>
+                <button onclick="produto.cancelar()"> Cancelar</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <table>
+                <thead>
+                    <th class="center1">ID</th>
+                    <th class="center1">PRODUTO</th>
+                    <th class="center1">VALOR</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+<script src="js.js"></script>
+</html>
