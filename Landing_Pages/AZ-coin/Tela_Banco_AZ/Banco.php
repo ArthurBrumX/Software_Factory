@@ -14,9 +14,7 @@ require_once("../Menu Lateral/Home.php");
           query once
     </head>
 <body class="home">
-    
     <main class="Conteiner-principal">
-
         <div class="conteiner-titulo">
             <h1 class="letra_titulo_uni">Saldo Total</h1>
             <h1 class="letra_titulo_uni">Recolhidos</h1>
@@ -84,12 +82,12 @@ require_once("../Menu Lateral/Home.php");
             <!------------------------------------------------------------->
         </nav>
 
-        <nav>
+        <!--<nav>
             <div class="bolinha-link">
                 <p></p>
             </div>
             <a href="#">Ver Detalhes</a>
-        </nav>
+        </nav>-->
 
         <nav class="conteiner_bolinha_1">
             <di class="bolinha_uma">

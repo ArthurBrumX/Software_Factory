@@ -508,18 +508,22 @@ https://stackoverflow.com/questions/70827887/detect-click-vs-touch-in-javascript
 
 /*Propriedades da Barra de Rolagem*/
 /*width*/
+/*
 ::-webkit-scrollbar{
     width: 10px;
 }
 /* Track */
+/*
 ::-webkit-scrollbar-track{
     background: none;
 }
 /* Handle */
+/*
 ::-webkit-scrollbar-thumb{
     background: var(--cor-laranja-az);
 }
 /* Handle on hover */
+/*
 ::-webkit-scrollbar-thumb:hover{
     background: var(--cor-fundo-menu);
 }

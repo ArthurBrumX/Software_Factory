@@ -1,12 +1,17 @@
 /*
 https://www.codingnepalweb.com/side-menu-bar-with-sub-menu-javascript/
-https://www.youtube.com/watch?v=O9l75KOB2pE*/
+https://www.youtube.com/watch?v=O9l75KOB2pE
+*/
 
-.conteiner-principal{
+.Conteiner-principal{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    background-color: burlywood;
+    padding: 4%;
+    margin-top: 4%;
+    margin-left: 8%;
 }
 .conteiner-titulo{
     display: flex; 
@@ -20,9 +25,10 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 
 .conteiner_cartao{
     display: flex; /*Deixa o item movimentavel*/
-    justify-content: center; /*alinha o item no centro*/
     justify-content: space-around; /*Abre espaço entre eles*/
-    height: 35%;
+    background-color: aqua;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .cartao_1{
