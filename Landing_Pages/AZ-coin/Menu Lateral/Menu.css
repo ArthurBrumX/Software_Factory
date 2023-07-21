@@ -4,7 +4,11 @@
     --cor-laranja-az: rgb(239, 78, 35);
     /*Transições*/
     --tran-menu: 0.5s all ease;
-    --tran-texto: 0.8s all ease;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .bg{
     right: 0;
@@ -14,9 +18,6 @@
     position: absolute;
 }
 .home{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Tomorrow', serif;
 }
 /*Propriedades do Menu Lateral*/
@@ -24,7 +25,7 @@
     border-right-style: solid;
     border-right-color: var(--cor-laranja-az) ;
     border-right-width: 2px;
-    z-index: 2;
+    z-index: 999;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -41,10 +42,13 @@
     flex-flow: column;
     list-style-type: none;
     justify-content: space-between;
+    margin-left: 40px;
+    position: relative;
 }
 
 /*Propriedades do SVG AzMerit*/
 .menulateral .listamenu .logoazmerit{
+    margin-top: 4vh;
     position: relative;
     margin-left: -15px;
     transition: var(--tran-menu);
@@ -57,11 +61,6 @@
 .menulateral .listamenu .logoazmerit #logoazmerit .path_merit{
     padding-bottom: 4px;
     padding-left: 7px;
-}
-
-/*Botão Maximizar Menu*/
-.menulateral .listamenu .toggle{
-    display: none;
 }
 
 /*Propriedades dos itens da lista*/
@@ -82,7 +81,6 @@
     font-weight: 500;
     padding: 2px 15px;
     margin-left: 50px;
-    border-radius: 30px;
 }
 .menulateral .listamenu .itemlista .itemmenu .icon{
     width: 25px;
@@ -90,10 +88,21 @@
 }
 
 /*Propriedades do hover dos itens*/
-.menulateral .listamenu .itemlista .itemmenu:hover{
+.menulateral .listamenu .itemlista .itemmenu:hover .pathicon{
+    fill: var(--cor-laranja-az);
+}
+.menulateral .listamenu .itemlista .itemmenu:hover .textoicon{
     color: var(--cor-laranja-az);
 }
-.menulateral .listamenu .itemlista .itemmenu:hover .pathicon{
+
+/*Propriedades do hover de Cadastrar*/
+.menulateral .listamenu .itemlista .cadastrar:hover{
+    color: var(--cor-laranja-az);
+}
+.menulateral .listamenu .itemlista .cadastrar:hover .pathicon{
+    fill: var(--cor-laranja-az);
+}
+.menulateral .listamenu .itemlista .cadastrar:hover .setabaixo path{
     fill: var(--cor-laranja-az);
 }
 
@@ -112,7 +121,6 @@
     font-weight: 500;
     padding: 2px 15px;
     margin-left: 50px;
-    border-radius: 30px;
 }
 .menulateral .listamenu .itemlista .cadastrar .icon{
     width: 25px;
@@ -134,23 +142,13 @@
     transform: translateY(-50%) rotate(-180deg);
 }
 
-/*Propriedades do hover de Cadastrar*/
-.menulateral .listamenu .itemlista .cadastrar:hover{
-    color: var(--cor-laranja-az);
-}
-.menulateral .listamenu .itemlista .cadastrar:hover .pathicon{
-    fill: var(--cor-laranja-az);
-}
-.menulateral .listamenu .itemlista .cadastrar:hover .setabaixo path{
-    fill: var(--cor-laranja-az);
-}
-
 /*Tamanho das Ondas*/
 .menulateral .logout_div{
-    position: relative;
+    z-index: 5;
     height: 100vh;
     margin-top: 50px;
     overflow: hidden;
+    position: relative;
 }
 
 /*Propriedades das Ondas https://www.cssscript.com/animated-waves-svg/*/
@@ -193,7 +191,8 @@
 }
 .logout_div .boxlogout{
     position: relative;
-    height: 100vh;
+    height: auto;
+    min-height: 100%;
     width: 100vw;
     background-color: var(--cor-laranja-az);
 }
@@ -217,7 +216,6 @@
     font-weight: 500;
     padding: 2px 15px;
     margin-left: 50px;
-    border-radius: 30px;
 }
 
 /*Propriedades do Cabeçalho*/
@@ -249,11 +247,11 @@
 .cabecalho .user_box .img_user{
     width: 84px;
     height: 84px;
-    padding-left: 10px;
+    margin-left: 10px;
     border-radius: 50%;
 }
 .cabecalho .tela_atual{
-    margin-top: 2%;
+    margin-top: 70px;
     margin-left: 60px;
     font-size: 20px;
     font-weight: bolder;
@@ -264,7 +262,7 @@
 .rodape{
     left: 45%;
     bottom: 0%;
-    z-index: 0;
+    z-index: 1;
     opacity: 0.35;
     padding: auto;
     font-size: 14px;
@@ -274,42 +272,74 @@
     color: rgb(0, 0, 0);
 }
 
-/*Propriedades da Página Exemplo*/
-.Conteiner-principal{
-    z-index: 0;
+/*Propriedades da Feedback Tela Vazia*/
+.telavazia{
+    z-index: 2;
     position: fixed;
-    width: auto;
+    width: 80%;
     left: 300px;
     right: 50px;
     height: 75vh;
+    margin-top: 3%;
+}
+.telavazia .textotelavazia{
+    font-size: 1rem;
+    position: relative;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+}
+.telavazia .giftelavazia{
+    z-index: 2;
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    justify-content: center;
+    margin-top: 3%;
     border-radius: 30px;
+    border-color: var(--cor-laranja-az);
+    border-width: 20px;
+    border-style: solid;
+}
+
+/*Propriedades do Sub Menu*/
+.itemlista .submenu{
+    display: none;
+    transition: var(--tran-menu);
+}
+.itemlista .submenu.show{
+    display: flex;
+    gap: 40px;
+    margin-left: 65px;
+    padding-top: 25px;
+    flex-flow: column;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.itemlista .submenu.show .textosub{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 2px 15px;
+    margin-left: 10px;
+}
+.itemlista .submenu.show li a:hover .textosub{
+    color: var(--cor-laranja-az);
+}
+.itemlista .submenu.show li a:hover .pathicon{
+    fill: var(--cor-laranja-az);
 }
 
 /*Configurações do Site Responsivo*/
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 768px){
     .menulateral.closed{
         width: 80px;
     }
-    .menulateral .listamenu .toggle{
-        display: flex;
-        position: absolute;
-        top: 35px;
-        right: -15px;
-        transform: translateY(-50%);
-        height: 25px;
-        width: 25px;
-        background: var(--cor-laranja-az);
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        color: white;
-        font-size: 22px;
-    }
-    .menulateral.closed .listamenu .toggle{
-        transform: translateY(-50%) rotate(180deg);
-    }
     .menulateral.closed .listamenu .logoazmerit{
-        margin-left: -30px;
+        margin-left: -25px;
     }
     .menulateral.closed .listamenu .logoazmerit #logoazmerit .path_az{
         width: 55px;
@@ -324,6 +354,30 @@
     .menulateral.closed .listamenu .itemlista .cadastrar .setabaixo{
         display: none;
     }
+
+
+
+    /*Faz o resto da tela ficar escuro*/
+    .menulateral .menuabertomobile{
+        z-index: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        margin-left: 250px; /*2px a mais por conta da borda*/
+        width: 100vw;
+        background-color: black;
+        height: 100vh;
+        opacity: 0.4;
+        animation: fadeIn 3s;
+    }
+    .menulateral.closed .menuabertomobile{
+        display: none;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+          to { opacity: 0.4; }
+    }
+
 
 
     .cabecalho{
@@ -341,62 +395,45 @@
     .cabecalho .tela_atual span{
         text-align: justify;
     }
-    .paginaexemplo{
-        left: 100px;
-        right: 20px;
-    }
     .menulateral .listamenu .itemlista{
         margin-left: -15px;
+    }
+    .menulateral.closed .listamenu .itemlista{
+        pointer-events: none;
     }
     .logout_div .boxlogout .itemlogout{
         margin-left: 30px;
     }
     .menulateral.closed .logout_div .boxlogout .itemlogout .textologout{
         display: none;
-        pointer-events: none;
     }
     .rodape{
         left: 25%;
         padding-right: 20px;
     }
-    
+    .telavazia{
+        left: 100px;
+        right: 20px;
+    }
+    .home .carteira-trans{
+        left: 100px;
+        right: 20px;
+    }
+    .carteira-trans .main-score-history .div-tables .table-score{
+        max-height: 25vh;
+    }
 }
 
 
 
 
-.itemlista .submenu{
-    display: none;
-    transition: var(--tran-menu);
-}
-.itemlista .submenu.show{
-    display: flex;
-    gap: 40px;
-    padding-top: 40px;
-    flex-flow: column;
-    list-style-type: none;
-    justify-content: space-between;
-}
-.itemlista .submenu.show .textosub{
-    color: white;
-    text-decoration: none;
-    position: absolute;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 2px 15px;
-    margin-left: 20px;
-    border-radius: 30px;
-}
-.itemlista .submenu.show li a:hover .textosub{
-    color: var(--cor-laranja-az);
-}
-.itemlista .submenu.show li a:hover .pathicon{
-    fill: var(--cor-laranja-az);
-}
+
+
 
 
 /*
 https://www.codingnepalweb.com/side-menu-bar-with-sub-menu-javascript/
+<<<<<<< HEAD:Landing_Pages/AZ-coin/Tela_Banco_AZ/style.css
 https://www.youtube.com/watch?v=O9l75KOB2pE*/
 
 
@@ -435,179 +472,99 @@ https://www.youtube.com/watch?v=O9l75KOB2pE*/
 }
 
 .logo_az_cartao{
+=======
+https://www.youtube.com/watch?v=O9l75KOB2pE
+https://stackoverflow.com/questions/70827887/detect-click-vs-touch-in-javascript
+*/
+/*
+.carteira-trans{
+    z-index: 2;
+    position: fixed;
+    width: auto;
+    left: 300px;
+    right: 50px;
+    height: 75vh;
+    background-color: rgba(217, 217, 217, .44);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(191, 191, 191);
+    margin-top: 3%;
+    border-radius: 20px;
+>>>>>>> 1992f5dd1d76d5f6aef25449c60ecb9ba199a57c:Landing_Pages/AZ-coin/Menu Lateral/Menu.css
     display: flex;
-    justify-content: flex-start;
-    height: 30px;
+    flex-direction: column;
 }
 
-.logo-cartao{
+.carteira-trans .azscore{
     display: flex;
-    margin-top: 15px;
+    margin-top: 3%;
+    justify-content: space-evenly;
 }
 
-.merit_letra{
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-}
-
-.barra{
-    margin-left: 130px;
-    font-size: 13px;
-    text-decoration: none;
-    color: #FF4242;
-}
-
-.logo_final{
-    height: 9px;
-    margin-top: 18px;
-    filter: invert(80%); /*para inverter a cor da imagem de preto para branco*/
-}
-
-.adm{
+.carteira-trans .main-score-history{
+    margin-top: 3%;
     display: flex;
-    margin-left: 2%;
-    height: 5vh;
-    width: 13vh;
-    margin-bottom: 70px;
-
-}
-.adm_letra{
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    
-}
-
-.valor-cartao{
-    text-align: center;
-    font-size: 5vh;
-    color: #FF4242;
-    color: var(--cor-laranja-az);
-}
-/*fim cartao*/
-
-/*------------------------------------------------------*/
-
-/*inicio seta*/
-
-#arrowAnim {
-    width: 1vw;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
-  
-.arrow {
-    width: 2vw;
-    height: 2vw;
-    border: 1vw solid;
-    border-color: black transparent transparent black;
-    transform: rotate(-45deg);
-}
-  
-  
-.arrowSliding {
-    position: absolute;
-    -webkit-animation: slide 4s linear infinite; 
-    animation: slide 4s linear infinite;
-    
+    height: 100%;
+    background-color: blue;
 }
 
-.delay1 {
-    -webkit-animation-delay: 1s; 
-    animation-delay: 1s;
+.carteira-trans .main-score-history .div-tables{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.delay2 {
-    -webkit-animation-delay: 2s; 
-    animation-delay: 2s;
+.carteira-trans .main-score-history .div-tables .exemplo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+    margin: 10px 10px;
 }
-.delay3 {
-    -webkit-animation-delay: 3s; 
-    animation-delay: 3s;
+.carteira-trans .main-score-history .div-tables .table-score{
+    display: flex;
+    flex-direction: column;
+    max-height: max-content;
 }
-  
-@-webkit-keyframes slide {
-    0% { opacity:0; transform: translateX(15vw); }	
-    20% { opacity:0; transform: translateX(9vw); }	
-    80% { opacity:0; transform: translateX(-9vw); }	
-    100% { opacity:0; transform: translateX(-15vw); }	
-}
-@keyframes slide {
-    0% { opacity:0; transform: translateX(15vw); }	
-    20% { opacity:0.1; transform: translateX(8vw); }	
-    80% { opacity:1; transform: translateX(-7vw); }	
-    100% { opacity:0; transform: translateX(-5vw); }	
-}
+.carteira-trans .main-score-history .div-tables .table-score .thead-score{
 
-/*Fim Seta*/
+}
+.carteira-trans .main-score-history .div-tables .table-score .thead-score .tr-table{
+    display: flex;
+    justify-content: space-evenly;
+}
+.carteira-trans .main-score-history .div-tables .table-score .tbody-score{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.carteira-trans .main-score-history .div-tables .table-score .tbody-score tr{
 
-
-/*Inicio bolinhas*/
-
-.bolinha-paragrafo{
+}
+.carteira-trans .main-score-history .div-tables .table-score .element-table{
     text-align: center;
-    font-size: 15px;
-    color: var(--cor-laranja-az);
-}
-
-.conteiner_bolinha_1{
     display: flex;
     justify-content: center;
 }
 
-.bolinha_uma{
-    display: flex;
-    margin-top: px;
+/*Propriedades da Barra de Rolagem*/
+/*width*/
+/*
+::-webkit-scrollbar{
+    width: 10px;
 }
-
-.bolinha_1{
-    background-color: #002436;
-    z-index: 2;
-    border-radius: 110px;
-    padding: 6vh 8vh 6vh 8vh;
-    border: 10px solid #827e7e;
+/* Track */
+/*
+::-webkit-scrollbar-track{
+    background: none;
 }
-
-/*-------------------------------------------------------*/
-
-.conteiner_bolinhas_2{
-    display: flex;
+/* Handle */
+/*
+::-webkit-scrollbar-thumb{
+    background: var(--cor-laranja-az);
 }
-
-.bolinha_duas{
-    display: flex;
-
-}
-
-.bolinha_2{
-    margin-left: 32vh;
-    background-color: #002436;
-    z-index: 2;
-    border-radius: 100px;
-    padding: 7vh;
-    padding: 6vh 8vh 6vh 8vh;
-    border: 10px solid #827e7e;
-}
-
-
-
-
-
-
-
-
-
-/*RODAPÉ*/
-.rodape{
-    left: 40%;
-    bottom: 0%;
-    z-index: 0;
-    opacity: 0.35;
-    padding: auto;
-    font-size: 14px;
-    position: absolute;
-    text-align: center;
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
+/* Handle on hover */
+/*
+::-webkit-scrollbar-thumb:hover{
+    background: var(--cor-fundo-menu);
 }

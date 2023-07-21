@@ -1,0 +1,223 @@
+/*
+https://www.codingnepalweb.com/side-menu-bar-with-sub-menu-javascript/
+https://www.youtube.com/watch?v=O9l75KOB2pE
+*/
+
+.Conteiner-principal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: burlywood;
+    padding: 4%;
+    margin-top: 4%;
+    margin-left: 8%;
+}
+.conteiner-titulo{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 70%;
+    margin-left: 18vh;
+    width: 100vh;
+}
+
+.conteiner_cartao{
+    display: flex; /*Deixa o item movimentavel*/
+    justify-content: space-around; /*Abre espaço entre eles*/
+    background-color: aqua;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.cartao_1{
+    background-color: #002436;
+    padding: 1%; /*espaco interno*/
+    border-radius: 20px; /*Borda Arredondada*/
+    
+}
+
+.cartao_2{
+    background-color: #002436;
+    padding: 1%; /*espaco interno*/
+    border-radius: 20px; /*borda arredondado*/
+}
+
+.logo_az_cartao{
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+}
+
+.logo-cartao{
+    display: flex;
+    margin-top: 15px;
+}
+
+.merit_letra{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.barra{
+    margin-left: 130px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #FF4242;
+}
+
+.logo_final{
+    height: 9px;
+    margin-top: 18px;
+    filter: invert(80%); /*para inverter a cor da imagem de preto para branco*/
+}
+
+.adm{
+    display: flex;
+    margin-left: 2%;
+    height: 5vh;
+    width: 13vh;
+    margin-bottom: 70px;
+
+}
+.adm_letra{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
+.valor-cartao{
+    text-align: center;
+    font-size: 5vh;
+    color: #FF4242;
+    color: var(--cor-laranja-az);
+}
+/*fim cartao*/
+
+/*------------------------------------------------------*/
+
+/*inicio seta*/
+
+#arrowAnim {
+    width: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.arrow {
+    width: 2vw;
+    height: 2vw;
+    border: 1vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(-45deg);
+}
+  
+  
+.arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+    animation: slide 4s linear infinite;
+    
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+.delay2 {
+    -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+.delay3 {
+    -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+  
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateX(15vw); }	
+    20% { opacity:0; transform: translateX(9vw); }	
+    80% { opacity:0; transform: translateX(-9vw); }	
+    100% { opacity:0; transform: translateX(-15vw); }	
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateX(15vw); }	
+    20% { opacity:0.1; transform: translateX(8vw); }	
+    80% { opacity:1; transform: translateX(-7vw); }	
+    100% { opacity:0; transform: translateX(-5vw); }	
+}
+
+/*Fim Seta*/
+
+
+/*Inicio bolinhas*/
+
+.bolinha-paragrafo{
+    text-align: center;
+    font-size: 15px;
+    color: var(--cor-laranja-az);
+}
+
+.conteiner_bolinha_1{
+    display: flex;
+    justify-content: center;
+}
+
+.bolinha_uma{
+    display: flex;
+    margin-top: px;
+}
+
+.bolinha_1{
+    background-color: #002436;
+    z-index: 2;
+    border-radius: 110px;
+    padding: 6vh 8vh 6vh 8vh;
+    border: 10px solid #827e7e;
+}
+
+/*-------------------------------------------------------*/
+
+.conteiner_bolinhas_2{
+    display: flex;
+}
+
+.bolinha_duas{
+    display: flex;
+
+}
+
+.bolinha_2{
+    margin-left: 32vh;
+    background-color: #002436;
+    z-index: 2;
+    border-radius: 100px;
+    padding: 7vh;
+    padding: 6vh 8vh 6vh 8vh;
+    border: 10px solid #827e7e;
+}
+
+
+
+
+
+
+
+
+
+/*RODAPÉ*/
+.rodape{
+    left: 40%;
+    bottom: 0%;
+    z-index: 0;
+    opacity: 0.35;
+    padding: auto;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
