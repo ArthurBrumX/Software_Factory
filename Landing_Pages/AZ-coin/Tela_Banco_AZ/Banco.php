@@ -11,7 +11,6 @@ require_once("../Menu Lateral/Home.php");
           <link rel="stylesheet" href="../Menu Lateral/Menu.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
-          query once
     </head>
 <body class="home">
     <main class="Conteiner-principal">
