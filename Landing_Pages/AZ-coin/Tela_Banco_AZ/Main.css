@@ -5,13 +5,12 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 
 .Conteiner-principal{
     position: absolute;
-    left: 50%;
-    top: 35%;
+    left: 105vh;
+    top: 35vh;
     transform: translateX(-50%) translateY(-50%);
-    background-color: burlywood;
-    padding: 3%;
-    margin-top: 7%;
-    margin-left: 5%;
+
+    padding: 0% 10% 7% 7%;
+    margin-top: 10%;
 }
 .conteiner-titulo{
     display: flex; 
@@ -19,25 +18,41 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     justify-content: space-between;
     text-decoration: none;
     font-size: 70%;
-    background-color: blue;
+
+    margin-bottom: 4vh;
+
+}
+
+.letra_titulo_uni_r{
+
+    margin-right: 13vh;
+}
+
+.letra_titulo_uni_s{
+
+    margin-left: 13vh;
 }
 
 .conteiner_cartao{
     display: flex; /*Deixa o item movimentavel*/
     justify-content: space-between; /*Abre espaço entre eles*/
-    background-color: aqua;
+
+    padding-right: 20vh;
 }
 
 .cartao_1{
     background-color: #002436;
     padding: 1% 5% 1% 5%; /*espaco interno*/
     border-radius: 20px; /*Borda Arredondada*/
+    margin-right: 20vh;
 }
 
 .cartao_2{
     background-color: #002436;
     padding: 1% 5% 1% 5%; /*espaco interno*/
     border-radius: 20px; /*borda arredondado*/
+    margin-left: 30vh;
+
 }
 
 .logo_az_cartao{

@@ -7,16 +7,16 @@ require_once("../Menu Lateral/Home.php");
     <head>
           <meta charset="utf-8">
           <title>Index</title>
-          <link rel="stylesheet" href="Banco.css">
           <link rel="stylesheet" href="../Menu Lateral/Menu.css">
+          <link rel="stylesheet" href="Main.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
     </head>
 <body class="home">
     <main class="Conteiner-principal">
         <div class="conteiner-titulo">
-            <h1 class="letra_titulo_uni">Saldo Total</h1>
-            <h1 class="letra_titulo_uni">Recolhidos</h1>
+            <h1 class="letra_titulo_uni_s">Saldo Total</h1>
+            <h1 class="letra_titulo_uni_r">Recolhidos</h1>
         </div>
 
         <nav class="conteiner_cartao">
