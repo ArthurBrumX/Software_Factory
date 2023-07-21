@@ -6,12 +6,12 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 .Conteiner-principal{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 35%;
     transform: translateX(-50%) translateY(-50%);
     background-color: burlywood;
-    padding: 4%;
-    margin-top: 4%;
-    margin-left: 8%;
+    padding: 3%;
+    margin-top: 7%;
+    margin-left: 5%;
 }
 .conteiner-titulo{
     display: flex; 
@@ -19,28 +19,25 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     justify-content: space-between;
     text-decoration: none;
     font-size: 70%;
-    margin-left: 18vh;
-    width: 100vh;
+    background-color: blue;
 }
 
 .conteiner_cartao{
     display: flex; /*Deixa o item movimentavel*/
-    justify-content: space-around; /*Abre espaço entre eles*/
+    justify-content: space-between; /*Abre espaço entre eles*/
     background-color: aqua;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 .cartao_1{
     background-color: #002436;
-    padding: 1%; /*espaco interno*/
+    padding: 1% 5% 1% 5%; /*espaco interno*/
     border-radius: 20px; /*Borda Arredondada*/
     
 }
 
 .cartao_2{
     background-color: #002436;
-    padding: 1%; /*espaco interno*/
+    padding: 1% 5% 1% 5%; /*espaco interno*/
     border-radius: 20px; /*borda arredondado*/
 }
 
@@ -52,7 +49,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 
 .logo-cartao{
     display: flex;
-    margin-top: 15px;
+    margin-top: 10%;
 }
 
 .merit_letra{
@@ -168,7 +165,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 
 .bolinha_uma{
     display: flex;
-    margin-top: px;
+    margin-top: 2%;
 }
 
 .bolinha_1{

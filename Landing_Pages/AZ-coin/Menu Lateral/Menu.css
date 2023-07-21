@@ -424,55 +424,8 @@
     }
 }
 
-
-
-
-
-
-
-
 /*
 https://www.codingnepalweb.com/side-menu-bar-with-sub-menu-javascript/
-<<<<<<< HEAD:Landing_Pages/AZ-coin/Tela_Banco_AZ/style.css
-https://www.youtube.com/watch?v=O9l75KOB2pE*/
-
-
-.conteiner-titulo{
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-    text-decoration: none;
-    font-size: 70%;
-    margin-left: 18vh;
-    width: 100vh;
-    background-color: coral;
-}
-
-.conteiner_cartao{
-    display: flex; /*Deixa o item movimentavel*/
-    justify-content: center; /*alinha o item no centro*/
-    justify-content: space-around; /*Abre espaço entre eles*/
-    height: 35%;
-    
-    widr
-    /------------------------------
-}
-
-.cartao_1{
-    background-color: #002436;
-    padding: 1%; /*espaco interno*/
-    border-radius: 20px; /*Borda Arredondada*/
-    
-}
-
-.cartao_2{
-    background-color: #002436;
-    padding: 1%; /*espaco interno*/
-    border-radius: 20px; /*borda arredondado*/
-}
-
-.logo_az_cartao{
-=======
 https://www.youtube.com/watch?v=O9l75KOB2pE
 https://stackoverflow.com/questions/70827887/detect-click-vs-touch-in-javascript
 */
