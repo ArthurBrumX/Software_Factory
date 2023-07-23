@@ -152,7 +152,7 @@
             <span class="nome_user">Gestor Humano</span>
             <a href="menugestor.html"><img class="img_user" src="img/Gestor.png" alt=""></a>
         </div>
-        <div class="tela_atual"><span>Home</span></div>
+        <div class="tela_atual"><span>Banco</span></div>
     </header>
 
     <footer class="rodape"><p>2023 © AZ Tecnologia em Gestão. Todos os direitos reservados.</p></footer>

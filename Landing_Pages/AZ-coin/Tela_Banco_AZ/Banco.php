@@ -83,12 +83,25 @@ require_once("../Menu Lateral/MenuGestor.php");
             <!------------------------------------------------------------->
         </nav>
 
-        <!--<nav>
-            <div class="bolinha-link">
-                <p></p>
+        <!--Ver detalhes-->
+        <!------------------------------------------------------------->
+
+        <nav>
+            <div class="Conteiner-link">
+
+                <div class="bolinha-link">
+                    <p class="bolinha-do-link"></p>
+                    
+                    <div>
+                        <a class="link-detalhes" href="#">Ver Detalhes</a>
+                    </div>
+                </div>
+
             </div>
-            <a href="#">Ver Detalhes</a>
-        </nav>-->
+        </nav>
+
+        <!--Fim Ver detalhes-->
+        <!------------------------------------------------------------->
 
         <nav class="conteiner_bolinha_1">
             <di class="bolinha_uma">
