@@ -131,7 +131,7 @@
     <header class="cabecalho">
         <div class="user_box">
             <span class="nome_user">Milena</span>
-            <a href="home.html"><img class="img_user" src="img/Milena.jpg" alt=""></a>
+            <a href="home.html"><img class="img_user" src="img_menu/Milena.jpg" alt=""></a>
         </div>
         <div class="tela_atual"><span>Home</span></div>
     </header>

@@ -3,6 +3,7 @@ https://www.codingnepalweb.com/side-menu-bar-with-sub-menu-javascript/
 https://www.youtube.com/watch?v=O9l75KOB2pE
 */
 
+/* Conteirner principal */
 .Conteiner-principal{
     position: absolute;
     left: 105vh;
@@ -18,9 +19,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     justify-content: space-between;
     text-decoration: none;
     font-size: 70%;
-
     margin-bottom: 4vh;
-
 }
 
 .letra_titulo_uni_r{
@@ -36,44 +35,50 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 .conteiner_cartao{
     display: flex; /*Deixa o item movimentavel*/
     justify-content: space-between; /*Abre espaço entre eles*/
-
-    padding-right: 20vh;
+    padding-right: 3vh;
+    background-color: aqua;
 }
+
+/* ------------------------------------------------------------- */
+/* config Cartao */
 
 .cartao_1{
     background-color: #002436;
-    padding: 1% 5% 1% 5%; /*espaco interno*/
+    padding: 1% 1% 1% 1%; /*espaco interno*/
     border-radius: 20px; /*Borda Arredondada*/
     margin-right: 20vh;
 }
 
 .cartao_2{
     background-color: #002436;
-    padding: 1% 5% 1% 5%; /*espaco interno*/
+    padding: 1% 1% 1% 1%; /*espaco interno*/
     border-radius: 20px; /*borda arredondado*/
     margin-left: 30vh;
 
 }
 
+/* ------------------------------------------------------------- */
+
+/* configuracao interna do cartao */
+
 .logo_az_cartao{
     display: flex;
     justify-content: flex-start;
-    height: 30px;
 }
 
 .logo-cartao{
-    display: flex;
-    margin-top: 10%;
+    height: 55%;
 }
 
 .merit_letra{
     text-decoration: none;
     font-size: 15px;
     color: white;
+
 }
 
 .barra{
-    margin-left: 130px;
+    margin-left: 20vh;
     font-size: 13px;
     text-decoration: none;
     color: #FF4242;
@@ -81,16 +86,16 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 
 .logo_final{
     height: 9px;
-    margin-top: 18px;
-    filter: invert(80%); /*para inverter a cor da imagem de preto para branco*/
+    margin-top: 1%;
+    /*filter: invert(80%); /*para inverter a cor da imagem de preto para branco*/
+    margin-right: 100%;
 }
 
 .adm{
     display: flex;
     margin-left: 2%;
-    height: 5vh;
-    width: 13vh;
-    margin-bottom: 70px;
+    margin-top: 6vh;
+    width: 9vh;
 
 }
 .adm_letra{
@@ -103,10 +108,14 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 .valor-cartao{
     text-align: center;
     font-size: 5vh;
+    margin-top: 4vh;
     color: #FF4242;
     color: var(--cor-laranja-az);
+
 }
+
 /*fim cartao*/
+/* ------------------------------------------------------------- */
 
 /*------------------------------------------------------*/
 

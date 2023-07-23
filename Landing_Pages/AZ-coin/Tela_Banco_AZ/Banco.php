@@ -1,5 +1,5 @@
 <?php
-require_once("../Menu Lateral/Home.php");
+require_once("../Menu Lateral/MenuGestor.php");
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require_once("../Menu Lateral/Home.php");
           <meta charset="utf-8">
           <title>Index</title>
           <link rel="stylesheet" href="../Menu Lateral/Menu.css">
-          <link rel="stylesheet" href="Main.css">
+          <link rel="stylesheet" href="estilo.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
     </head>
@@ -30,10 +30,12 @@ require_once("../Menu Lateral/Home.php");
                     <img class="logo_final" src="img/AZmerit-Simbolo-Cartao.png" alt="carregando...">
                 </div>
                 <!------------------------------------------------------------->
+
                 <div>
                     <p class="valor-cartao">R$0</p>
                 </div>
                 <!------------------------------------------------------------->
+                
                 <div class="adm">
                     <h1 class="adm_letra">Administrador</h1>
                 </div>
