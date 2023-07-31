@@ -7,8 +7,8 @@ require_once("../Menu Lateral/MenuGestor.php");
     <head>
           <meta charset="utf-8">
           <title>Index</title>
-          <link rel="stylesheet" href="../Menu Lateral/forma.css">
-          <link rel="stylesheet" href="estilo.css">
+          <link rel="stylesheet" href="../Menu Lateral/Menu.css">
+          <link rel="stylesheet" href="forma.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
     </head>
