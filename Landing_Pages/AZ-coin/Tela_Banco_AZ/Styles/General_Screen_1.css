@@ -1,7 +1,5 @@
-/*
-https://www.codingnepalweb.com/side-menu-bar-with-sub-menu-javascript/
-https://www.youtube.com/watch?v=O9l75KOB2pE
-*/
+/*para tamnhos nao definidos de telas serao apl*/
+
 
 /* Conteirner principal */
 .Conteiner-principal{
@@ -11,14 +9,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     transform: translateX(-50%) translateY(-50%);
     padding: 0% 10% 7% 7%;
     margin-top: 10%;
-}
-
-@media screen and (max-width: 200vh){
-    
-    .Conteiner-principal{
-        margin-top: 15%;
-        margin-left: 9%;
-    }
+    background-color: steelblue;
 }
 
 .conteiner-titulo{
@@ -31,12 +22,10 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 }
 
 .letra_titulo_uni_r{
-
     margin-right: 13vh;
 }
 
 .letra_titulo_uni_s{
-
     margin-left: 13vh;
 }
 
@@ -149,14 +138,6 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     text-decoration: none;
     color: black;
 }
-
-@media screen and (max-width: 200vh){
-    
-    .Conteiner-link{
-        margin-left: 5%;
-    }
-}
-
 /*------------------------------------------------------*/
 
 /*inicio seta*/
@@ -167,7 +148,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     justify-content: center;
     align-items: center;
 }
-  
+
 .arrow {
     width: 2vw;
     height: 2vw;
@@ -175,8 +156,8 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     border-color: black transparent transparent black;
     transform: rotate(-45deg);
 }
-  
-  
+
+
 .arrowSliding {
     position: absolute;
     -webkit-animation: slide 4s linear infinite; 
@@ -196,7 +177,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     -webkit-animation-delay: 3s; 
     animation-delay: 3s;
 }
-  
+
 @-webkit-keyframes slide {
     0% { opacity:0; transform: translateX(15vw); }	
     20% { opacity:0; transform: translateX(9vw); }	
@@ -205,7 +186,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 }
 @keyframes slide {
     0% { opacity:0; transform: translateX(15vw); }	
-    20% { opacity:0.1; transform: translateX(8vw); }	
+    20% { opacity:0.1; transform: translateX(8vw); }
     80% { opacity:1; transform: translateX(-7vw); }	
     100% { opacity:0; transform: translateX(-5vw); }	
 }
@@ -250,7 +231,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 
 .conteiner_bolinhas_2{
     display: flex;
-    
+
 }
 
 .bolinha_duas{
