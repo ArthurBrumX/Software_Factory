@@ -4,17 +4,15 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
 */
 
 /*monitor de 14/ 15 / 16 polegadas*/
-@media (min-width: 1200px) and (max-width: 1600px){
+@media (min-width: 1400px) and (max-width: 1699px){
+    /*max-width: 1400px*/
     
     /* Conteirner principal */
     .Conteiner-principal{
-        position: absolute;
-        left: 120vh;
-        top: 44vh;
-        transform: translateX(-50%) translateY(-50%);
-        padding: 0% 10% 7% 7%;
-        margin-top: 10%;
+        margin-left: 18%;
+        margin-top: 3%;
         background-color: aqua;
+        width: 80%;
     }
 
     .conteiner-titulo{
@@ -28,7 +26,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     
     .letra_titulo_uni_r{
     
-        margin-right: 13vh;
+        margin-right: 15vh;
     }
     
     .letra_titulo_uni_s{
@@ -47,17 +45,16 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     
     .cartao_1{
         background-color: #002436;
-        padding: 1% 1% 1% 1%; /*espaco interno*/
+        padding: 1%; /*espaco interno*/
         border-radius: 20px; /*Borda Arredondada*/
-        margin-right: 20vh;
+        width: 25%;
     }
     
     .cartao_2{
         background-color: #002436;
-        padding: 1% 1% 1% 1%; /*espaco interno*/
+        padding: 1%; /*espaco interno*/
         border-radius: 20px; /*borda arredondado*/
-        margin-left: 30vh;
-    
+        width: 25%;
     }
     
     /* ------------------------------------------------------------- */
@@ -124,13 +121,13 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     
     .Conteiner-link{
         margin-top: 1%;
-        margin-left: 3vh;
+        margin-left: 10vh;
     }
     
     .bolinha-link{
         display: flex;
         flex-direction: row;
-        margin-left: 90vh;
+        margin-left: 107vh;
     
     }
     
@@ -248,7 +245,7 @@ https://www.youtube.com/watch?v=O9l75KOB2pE
     }
 
     .bolinha_2{
-        margin-left: 28vh;
+        margin-left: 39vh;
         background-color: #002436;
         z-index: 2;
         border-radius: 100%;
