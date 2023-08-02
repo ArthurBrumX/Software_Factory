@@ -11,6 +11,7 @@ require_once("../Menu Lateral/MenuGestor.php");
           <link rel="stylesheet" href="Styles/General_Screen_2.css">
           <link rel="stylesheet" href="Styles/Screen-14-15-16_2.css">
           <link rel="stylesheet" href="Styles/Screen-23_2.css">
+          <link rel="stylesheet" href="Styles/Screen-cell.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
     </head>
