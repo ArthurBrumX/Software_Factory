@@ -8,10 +8,10 @@ require_once("../Menu Lateral/MenuGestor.php");
           <meta charset="utf-8">
           <title>Index</title>
           <link rel="stylesheet" href="../Menu Lateral/Menu.css">
-          <link rel="stylesheet" href="Styles/General_Screen_3.css">
-          <link rel="stylesheet" href="Styles/Screen-14-15-16_3.css">
-          <link rel="stylesheet" href="Styles/Screen-23_3.css">
-          <link rel="stylesheet" href="Styles/Screen-cell_3.css">
+          <link rel="stylesheet" href="Styles/General_Screen_4.css">
+          <link rel="stylesheet" href="Styles/Screen-14-15-16_4.css">
+          <link rel="stylesheet" href="Styles/Screen-23_4.css">
+          <link rel="stylesheet" href="Styles/Screen-cell_4.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
     </head>
