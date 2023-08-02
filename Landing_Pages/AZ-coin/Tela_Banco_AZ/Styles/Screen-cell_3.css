@@ -1,5 +1,5 @@
 /*monitor de 14/ 15 / 16 polegadas*/
-@media (min-width: 390px) and (max-width: 844px){
+@media (min-width: 300px) and (max-width: 844px){
     
     /* Conteirner principal */
     .Conteiner-principal{
