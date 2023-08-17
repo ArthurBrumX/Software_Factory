@@ -12,6 +12,8 @@ require_once("config.php")
           <link rel="stylesheet" href="Styles/General_Screen_5.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+          <link rel="stylesheet" href="modal/modal.css">
+          <script src="modal/modal.js" defer></script>
     </head>
 <body class="home">
     <main class="Conteiner-principal">
