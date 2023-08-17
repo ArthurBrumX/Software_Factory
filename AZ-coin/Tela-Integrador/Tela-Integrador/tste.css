@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*inicio Botão de Voltar Tela*/
+#botao-voltar{
+    display: flex;
+    background-color: rgba(215, 91, 54, 1);
+    font-family: 'Tomorrow', sans-serif;
+    justify-content: flex-end;
+    border-radius: 15px;
+    width: 60%;
+    color: white;
+    font-style: normal;
+    border: none;
+    align-items: center;
+}
+
+#botao-voltar:hover{
+    cursor: pointer;
+}
+
+/*Posisão do Botão*/
+#caixa-botao-voltar{
+    display: flex;
+    margin-left: 90%;
+    margin-top: 8%;
+/*Fim posisão do botão*/
+
+}
+#img-botao-voltar{
+    display: flex;
+    width: 30%;
+    margin-right: 5%;
+}
+#texto-voltar{
+    margin-right: 6%;
+}
+
+/*fim Botão de Voltar Tela*/
