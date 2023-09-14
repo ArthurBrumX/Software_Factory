@@ -78,6 +78,8 @@
 
 # funcao para emitir o aleta
 
+# importar a biblioteca pyzbar
+
 
 
 
