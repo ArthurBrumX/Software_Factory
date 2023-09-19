@@ -7,6 +7,8 @@ class telaPython:
             [sg.Text('Nome'),sg.Input()],
             [sg.Text('Idade'),sg.Input()],
             [sg.Checkbox('Gmail'), sg.Checkbox('Outlook'), sg.Checkbox('Yahoo')],
+            [sg.Text('Aceita Cartao')]
+            [sg.Radio('Sim','Cartoes'), sg.Radio('Não','Cartoes')],
             [sg.Button('Enviar Dados')],
         ]
         # janela
