@@ -6,7 +6,8 @@ class telaPython:
         layout = [
             [sg.Text('Nome'),sg.Input()],
             [sg.Text('Idade'),sg.Input()],
-            [sg.Button()]
+            [sg.Checkbox('Gmail'), sg.Checkbox('Outlook'), sg.Checkbox('Yahoo')],
+            [sg.Button('Enviar Dados')],
         ]
         # janela
         janela = sg.Window("Dados do usuario").layout(layout)
