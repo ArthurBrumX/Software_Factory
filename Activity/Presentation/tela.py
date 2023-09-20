@@ -1,6 +1,5 @@
 import PySimpleGUI as sg
 #Importando a biblioteca
-
 class telaPython:
     def __init__(self):
         # layout
