@@ -24,7 +24,7 @@ while True:
     if event == sg.WIN_CLOSED:
         break
     elif event == 'Nova Tarefa':
-        janela.extend_layout(janela['container'], [sg.Checkbox(''), sg.Input('')])
+        janela.extend_layout(janela['container'], [[sg.Checkbox(''), sg.Input('')]])
     elif event == 'Resetar':
         janela.close()
         janela = criar_janela_inicial()
