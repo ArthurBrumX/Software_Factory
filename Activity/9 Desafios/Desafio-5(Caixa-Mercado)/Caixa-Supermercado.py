@@ -15,19 +15,6 @@ produto_8 = CaixaMercado(222324,9.27,"Arroz")
 produto_9 = CaixaMercado(252627,10.28,"Cereal")
 produto_10 = CaixaMercado(282930,11.29,"Bolo")
 
-produtos = [
-    produto_1,
-    produto_2,
-    produto_3,
-    produto_4,
-    produto_5,
-    produto_6,
-    produto_7,
-    produto_8,
-    produto_9,
-    produto_10
-]
-
 print("Super Mercado xingling")
 
 quantProdutos = input("Tem Produto [S/N]: ")
