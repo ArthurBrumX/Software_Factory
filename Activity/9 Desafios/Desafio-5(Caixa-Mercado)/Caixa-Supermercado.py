@@ -15,25 +15,19 @@ produto_8 = CaixaMercado(222324,9.27,"Arroz")
 produto_9 = CaixaMercado(252627,10.28,"Cereal")
 produto_10 = CaixaMercado(282930,11.29,"Bolo")
 
-produtos = [
-    produto_1,
-    produto_2,
-    produto_3,
-    produto_4,
-    produto_5,
-    produto_6,
-    produto_7,
-    produto_8,
-    produto_9,
-    produto_10
-]
-
 print("Super Mercado xingling")
 
-quantProdutos = input("Tem Produto [S/N]: ")
-while quantProdutos == "S" or quantProdutos == 's':
-        leitorCodigoBarras = int(input("Digite Codigos Do Produto: "))
-        if leitorCodigoBarras == 123:
-            produto_1.passarCompra()
+comprar = input("Vai Comprar [S/N]: ")
 
+while comprar == "S" or comprar == 's':
+        
+        # caixaFiscal = int(input("Digite Codigos Do Produto: "))
+
+        leitorDeCodigoDeBarras()
+        
+        comprar = input("Vai comprar mais alguma coisa [S/N]: ")
+        
+        # if comprar == "n" or comprar == "N":
+        #     print(f"O valor da compra deu: R${valorCompra}")
+        #     break
 
