@@ -2,16 +2,42 @@
 # Programação Orientada a Objetos (POO). 
 # O sistema deve permitir a realização de compras, cálculo de total e troco. 
 
-class produto: # definindo uma classe produto (pois no mercado existem diversos produtos)
-    def __init__(self,nome,preco):
-        # Principais caracteristicas de um produto
-        self.nome = nome 
-        self.preco = preco
-
-class CarrinhoDeCompras: # para criar uma lista de compra
+class produto: # controlar os produtos
     def __init__(self):
-        self.itens = [] #lista de itens que vai ter na minha compra
+        self.nome = input("Digite o Nome Do Produto")
+        self.valor = input("Digite o Valor do produto")
 
-    def adicionarItem(self,produto,quantidade):
-        self.itens.append({"Produto":produto, "Quantidade":quantidade})
+class caixa: # controla saida de produtos
+    def __init__(self):
+        pass
+
+    def adcionarAoCarrinho(self,produto,quantidade):
+        self.carrinho.append((produto,quantidade))
+
+    def passarNoCaixa(self):
+        valorCompra = 0
+        for produto, quantidade in self.carrinho:
+            valorCompra += produto.preco * quantidade
         
+        return valorCompra
+
+    def pagar(self, valorPago):
+        valorCompra = self.passarNoCaixa()
+        troco = valorPago - valorCompra
+        if troco >= 0:
+            self.imprimirRecibo(valorCompra, troco)
+            self.carrinho = []
+        else:
+            print("Valor pago insuficiente, adicione mais dinheiro")
+        
+    def imprimir_recibo(self, total, troco):
+        print("Recibo de Compra")
+        print("================")
+        for produto, quantidade in self.produtos_comprados:
+            print(f"{produto.nome}: {quantidade} x R${produto.preco:.2f}")
+        print("================")
+        print(f"Total: R${total:.2f}")
+        print(f"Troco: R${troco:.2f}")
+        print("================")
+
+
