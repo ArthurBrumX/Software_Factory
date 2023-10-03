@@ -2,19 +2,22 @@
 # Programação Orientada a Objetos (POO). 
 # O sistema deve permitir a realização de compras, cálculo de total e troco. 
 
-from ClassesMercado import produto
 from ClassesMercado import caixa
 
 print("Super Mercado Cubiculos!")
 
-comprar = input("Deseja Comprar [S/N]: ")
+boasVindas = input("Deseja Comprar [S/N]: ")
 
-carrinho = []
+while boasVindas == "S" or boasVindas == "s":
+    compras = caixa()
+    compras.adcionarAoCarrinho
 
-listaProdutos = produto()
+    boasVindas = input("Tem mais alguma coisa [S/N]: ")
+    if boasVindas == "N" or boasVindas == "n":
+        break
+    
+imprimir_nomeProduto()
 
-while comprar == "S" or comprar == "s":
-    carrinho.append(listaProdutos.produto())
 
 
     
