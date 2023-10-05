@@ -66,13 +66,39 @@ def excluir_dados():
     cursor.execute("DELETE FROM produtos WHERE id_produtos" + str(valor_id))
     banco.commit()
 
+def editar_dados():
+    global numero_id
+    linha = listarProdutos.tableWidget.currentRow()
+
+    cursor = banco.cursor()
+    cursor.execute("SELECT id_produtos FROM produtos")
+    dados_recebidos = cursor.fetchall()
+    valor_id = dados_recebidos[linha][0]
+    cursor.execute("SELECT * FROM produtos WHERE id_produtos" + str(valor_id))
+    tela_editar.show()
+
+    tela_editar.lineEdit.setText(str(produtos[0][0]))
+    tela_editar.codigo.setText(str(produtos[0][1]))
+    tela_editar.descricao.setText(str(produtos[0][2]))
+    tela_editar.preco.setText(str(produtos[0][3]))
+    tela_editar.categoria.setText(str(produtos[0][4]))
+
+    numero_id = valor_id
+
 app = QtWidgets.QApplication([])
 produtos = uic.loadUi("cadastro_produtos.ui")
 listarProdutos = uic.loadUi("listar_dados.ui")
 produtos.cadastrar.clicked.connect(funcao_principal)
 produtos.listar.clicked.connect(listar)
 listarProdutos.Deletar.clicked.connect(excluir_dados)
+listarProdutos.editar.clicked.connect(editar_dados)
+
+tela_editar = uic.load_ui("modal_editar.ui")
+tela_editar.salvar.clicked.connect(salvar_dados_editados)
 
 produtos.show()
 app.exec()
 
+# pra chamar uma variavel dentro de uma funcao, tem q atribuir o valor a uma variavel nova e coloca nome da variavel.funcao
+
+#novaVariavel = nomeDavariavel.funcao
