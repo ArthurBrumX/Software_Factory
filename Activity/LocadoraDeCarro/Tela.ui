@@ -82,8 +82,8 @@
          <rect>
           <x>10</x>
           <y>0</y>
-          <width>761</width>
-          <height>521</height>
+          <width>731</width>
+          <height>421</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -96,86 +96,82 @@
          <attribute name="title">
           <string>Tab 1</string>
          </attribute>
-         <widget class="QTreeWidget" name="treeWidget">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>10</y>
-            <width>391</width>
-            <height>192</height>
-           </rect>
-          </property>
-          <column>
-           <property name="text">
-            <string>1</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>NFe</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Serie</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Cliente</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>UF</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Municipio</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Cod Item</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Quantidade</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Decricao</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>UN</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Especie</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Valor NFe</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Data Importacao</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>Usuario</string>
-           </property>
-          </column>
-         </widget>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTreeWidget" name="treeWidget">
+            <column>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>NFe</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Serie</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Cliente</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>UF</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Municipio</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Cod Item</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Quantidade</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Decricao</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>UN</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Especie</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Valor NFe</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Data Importacao</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Usuario</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
         </widget>
         <widget class="QWidget" name="tab_2">
          <attribute name="title">
