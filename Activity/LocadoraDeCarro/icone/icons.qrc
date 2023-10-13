@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="icone"/>
   <qresource prefix="newPrefix">
-    <file>usermodific2.png</file>
+    <file>carromodifdfc.png</file>
   </qresource>
 </RCC>
