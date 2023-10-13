@@ -11,7 +11,9 @@
 # (Cadastrar, R(mostrar os dados), U(editar os dados), D(deletar se o carro nunca foi alugado ou vendido)). 
 # Cadastrar usuário para realizar a venda ou a locação. 
 
+from Crud import Conexao # para importar uma classe de outro arquivo
+#from pasta1 import arquivo1
 
-from PyQt6 import uic, QTWidgets
+conexao = Conexao.conexao_banco()
 
 
