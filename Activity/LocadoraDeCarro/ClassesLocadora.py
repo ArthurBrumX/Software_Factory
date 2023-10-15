@@ -13,20 +13,33 @@
 
 from Crud import Conexao # para importar uma classe de outro arquivo
 #from pasta1 import arquivo1
+
 import pymysql.connections
 
+#importando as Bibliotecas que seram usadas
 from PyQt6.QtWidgets import QApplication, QMainWindow
-from TelaMain import Ui_MainWindow
+from arquivo import Ui_MainWindow
 import sys
 
+# Criando um instaciamento (chamando o banco)
 conexao = Conexao.conexao_banco()
 
+# Criando a classe das Telas
 class telaPrincipal(QMainWindow, Ui_MainWindow):
     def __init__(self) -> None:
-        super(telaPrincipal, self).__init__(),
-        self.setupUi(self),
-        self.setWindowTitle("Tela Principal"),
+        super(telaPrincipal, self).__init__()
+        self.setupUi(self)
+        self.setWindowTitle("Tela Principal")
 
+        # Conectando os Botoes (menu)
+        self.bnt_home.clicked.connect(lambda: self.janelaDeNavegacao.setCurrentWidget(self.home))
+        self.bnt_cadastrarUser.clicked.connect(lambda: self.janelaDeNavegacao.setCurrentWidget(self.page_cadastrarUser))
+        self.bnt_cadastrarVeiculo.clicked.connect(lambda: self.janelaDeNavegacao.setCurrentWidget(self.page_cadastrarVeiculo))
+        self.bnt_listaUser.clicked.connect(lambda: self.janelaDeNavegacao.setCurrentWidget(self.page_listaDeUsuarios))
+        self.bnt_listaVeiculo.clicked.connect(lambda: self.janelaDeNavegacao.setCurrentWidget(self.page_listaDeVeiculos))
+        # Final das Conecoes com as telas (menu)
+    
+# Iniciando a Tela Principal
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = telaPrincipal()

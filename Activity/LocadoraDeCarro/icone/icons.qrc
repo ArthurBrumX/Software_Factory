@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="icone"/>
-  <qresource prefix="newPrefix">
-    <file>carromodifdfc.png</file>
-  </qresource>
-</RCC>

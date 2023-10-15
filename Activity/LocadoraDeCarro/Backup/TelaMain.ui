@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>605</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -86,7 +86,7 @@ p, li { white-space: pre-wrap; }
       <item row="0" column="0">
        <widget class="QStackedWidget" name="Pages">
         <property name="currentIndex">
-         <number>0</number>
+         <number>6</number>
         </property>
         <widget class="QWidget" name="Alugar_Diaria">
          <widget class="QFrame" name="frame_5">
@@ -397,6 +397,11 @@ p, li { white-space: pre-wrap; }
                <column>
                 <property name="text">
                  <string>VALOR (COMPRA)</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>ESCOLHA</string>
                 </property>
                </column>
               </widget>
