@@ -13,7 +13,22 @@
 
 from Crud import Conexao # para importar uma classe de outro arquivo
 #from pasta1 import arquivo1
+import pymysql.connections
+
+from PyQt6.QtWidgets import QApplication, QMainWindow
+from TelaMain import Ui_MainWindow
+import sys
 
 conexao = Conexao.conexao_banco()
 
+class telaPrincipal(QMainWindow, Ui_MainWindow):
+    def __init__(self) -> None:
+        super(telaPrincipal, self).__init__(),
+        self.setupUi(self),
+        self.setWindowTitle("Tela Principal"),
 
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = telaPrincipal()
+    window.show()
+    app.exec()
