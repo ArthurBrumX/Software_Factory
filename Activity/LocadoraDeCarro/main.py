@@ -84,9 +84,9 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
 
         self.bnt_cadastrarUsuario.clicked.connect(self.inserirUsuario)
         self.bnt_cadastrarVeiculoo.clicked.connect(self.cad_veiculo)
-        self.bnt_deletarUsuario.clicked.connect(self.deletarUser)
+        # self.bnt_deletarUsuario.clicked.connect(self.deletarUser)
 
-        self.tabelaListaDeUsuarios.setCollumnWidth(self.tabelaListaDeUsuarios)
+        # self.tabelaListaDeUsuarios.setCollumnWidth(self.tabelaListaDeUsuarios)
 
     #Funcao para cadastrar o usuario
     def inserirUsuario(self): 
@@ -127,43 +127,43 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         print(sql)
 
     #Funcao para tabelaListaDeUsuarios
-    def tabelaListaDeUsuarios(self):
-        # Suponha que você já tenha obtido os dados de carros e os armazenado em uma lista chamada 'dados'
+    # def tabelaListaDeUsuarios(self):
+    #     # Suponha que você já tenha obtido os dados de carros e os armazenado em uma lista chamada 'dados'
 
-        # Configura o número de linhas e colunas na tabela
-        self.listaCarros.lista_carros.setRowCount(len(0,400))
-        self.listaCarros.lista_carros.setColumnCount(9)
+    #     # Configura o número de linhas e colunas na tabela
+    #     self.listaCarros.lista_carros.setRowCount(len(0,400))
+    #     self.listaCarros.lista_carros.setColumnCount(9)
 
-        # Conecta os botões aos slots
-        self.listaCarros.novo_carro.clicked.connect(self.to_novo_carro)
-        self.listaCarros.cad_user.clicked.connect(self.to_cadastrar_usuario)
-        self.listaCarros.btn_sair.clicked.connect(self.sair)
+    #     # Conecta os botões aos slots
+    #     self.listaCarros.novo_carro.clicked.connect(self.to_novo_carro)
+    #     self.listaCarros.cad_user.clicked.connect(self.to_cadastrar_usuario)
+    #     self.listaCarros.btn_sair.clicked.connect(self.sair)
 
-        # Define os nomes das colunas
-        nomes_colunas = ["ID", "NOME", "MODELO", "STATUS", "COR", "PRECO", "CATEGORIA", "", ""]
-        self.listaCarros.lista_carros.setHorizontalHeaderLabels(nomes_colunas)
+    #     # Define os nomes das colunas
+    #     nomes_colunas = ["ID", "NOME", "MODELO", "STATUS", "COR", "PRECO", "CATEGORIA", "", ""]
+    #     self.listaCarros.lista_carros.setHorizontalHeaderLabels(nomes_colunas)
 
-        # Aplica estilos à tabela
-        self.listaCarros.lista_carros.setStyleSheet("QTableView::item:selected { color:#0f0; background:#000000; font-weight:900; }"
-                                                "QTableCornerButton::section { background-color:#232326; }" 
-                                                "QHeaderView::section { color:#fff; background-color:#232326; }"
-                                                "QTableView::item { color:#fff }")
+    #     # Aplica estilos à tabela
+    #     self.listaCarros.lista_carros.setStyleSheet("QTableView::item:selected { color:#0f0; background:#000000; font-weight:900; }"
+    #                                             "QTableCornerButton::section { background-color:#232326; }" 
+    #                                             "QHeaderView::section { color:#fff; background-color:#232326; }"
+    #                                             "QTableView::item { color:#fff }")
 
-        # Preenche a tabela com os dados dos carros e adiciona botões "Editar" e "Excluir"
-        for linha in range(0, len(veiculo)):
-            for coluna in range(0, 7):
-                self.listaCarros.lista_carros.setItem(linha, coluna, QtWidgets.QTableWidgetItem(str(dados[linha][coluna])))
-                if coluna == 6:
-                    btn_editar = QtWidgets.QPushButton("Editar")
-                    btn_editar.clicked.connect(lambda state, linha=linha: self.to_editar_carro(dados[linha][0]))
-                    btn_editar.setStyleSheet("color: #fff; background-color: #045033")
-                    self.listaCarros.lista_carros.setCellWidget(linha, coluna + 1, btn_editar)
+    #     # Preenche a tabela com os dados dos carros e adiciona botões "Editar" e "Excluir"
+    #     for linha in range(0, len(veiculo)):
+    #         for coluna in range(0, 7):
+    #             self.listaCarros.lista_carros.setItem(linha, coluna, QtWidgets.QTableWidgetItem(str(dados[linha][coluna])))
+    #             if coluna == 6:
+    #                 btn_editar = QtWidgets.QPushButton("Editar")
+    #                 btn_editar.clicked.connect(lambda state, linha=linha: self.to_editar_carro(dados[linha][0]))
+    #                 btn_editar.setStyleSheet("color: #fff; background-color: #045033")
+    #                 self.listaCarros.lista_carros.setCellWidget(linha, coluna + 1, btn_editar)
                     
-                    if obCarro.carro_v_a(dados[linha][0]) == False:
-                        btn_excluir = QtWidgets.QPushButton("Excluir")
-                        btn_excluir.clicked.connect(lambda state, linha=linha: self.excluir_carro(dados[linha][0]))
-                        btn_excluir.setStyleSheet("color: #fff; background-color: #670503")
-                        self.listaCarros.lista_carros.setCellWidget(linha, coluna + 2, btn_excluir)
+    #                 if obCarro.carro_v_a(dados[linha][0]) == False:
+    #                     btn_excluir = QtWidgets.QPushButton("Excluir")
+    #                     btn_excluir.clicked.connect(lambda state, linha=linha: self.excluir_carro(dados[linha][0]))
+    #                     btn_excluir.setStyleSheet("color: #fff; background-color: #670503")
+    #                     self.listaCarros.lista_carros.setCellWidget(linha, coluna + 2, btn_excluir)
 
 
     
