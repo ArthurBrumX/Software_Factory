@@ -65,7 +65,7 @@
     <item>
      <widget class="QStackedWidget" name="janelaDeNavegacao">
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="home">
        <layout class="QGridLayout" name="gridLayout_3">
