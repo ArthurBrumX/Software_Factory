@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>691</width>
+    <height>527</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -488,6 +488,11 @@ p, li { white-space: pre-wrap; }
          <widget class="QTreeWidget" name="tabelaListaDeUsuarios">
           <column>
            <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
             <string>NOME</string>
            </property>
           </column>
@@ -536,8 +541,18 @@ p, li { white-space: pre-wrap; }
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
-          <layout class="QGridLayout" name="gridLayout_4">
-           <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="tituloDigiteID">
+             <property name="text">
+              <string>Digite o ID Que Deseja Deletar: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="txt_DeletarIDUser"/>
+           </item>
+           <item>
             <widget class="QPushButton" name="bnt_deletarUsuario">
              <property name="text">
               <string>Deletar Usuario</string>
@@ -553,6 +568,11 @@ p, li { white-space: pre-wrap; }
        <layout class="QGridLayout" name="gridLayout_8">
         <item row="0" column="0">
          <widget class="QTreeWidget" name="tabelaListaDeVeiculos">
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
           <column>
            <property name="text">
             <string>CATEGORIA</string>
@@ -590,7 +610,7 @@ p, li { white-space: pre-wrap; }
           </column>
          </widget>
         </item>
-        <item row="1" column="0">
+        <item row="2" column="0">
          <widget class="QFrame" name="frame_btn_OpcoesVeiculos">
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -599,6 +619,16 @@ p, li { white-space: pre-wrap; }
            <enum>QFrame::Raised</enum>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="tituloDigiteIDveiculo">
+             <property name="text">
+              <string>Digite o ID Do Veiculo Desejado: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="txt_idVeiculo"/>
+           </item>
            <item>
             <widget class="QPushButton" name="btn_deletarVeiculo">
              <property name="text">
