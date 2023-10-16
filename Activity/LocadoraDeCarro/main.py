@@ -13,7 +13,9 @@
 #==================================================================================================================
 
 #importando metodos da conexao
-from Crud.Conexao import BancoDeDados # para importar uma classe de outro arquivo
+from Crud.Conexao import BancoPostgreSQL # para importar uma classe de outro arquivo
+
+# importa 
 #from pasta1 import arquivo1
 
 import pymysql.connections
@@ -47,29 +49,34 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         self.bnt_listaVeiculo.clicked.connect(lambda: self.janelaDeNavegacao.setCurrentWidget(self.page_listaDeVeiculos))
         # Final das Conecoes com as telas (menu)
 
-        # self.bnt_cadastrarUsuario.clicked.connect(self.inserirUsuario)
+        self.bnt_cadastrarUsuario.clicked.connect(self.inserirUsuario)
+
+
+    def inserirUsuario(self):
+        self.bnt_cadastrarUsuario.clicked.connect(self.inserirUsuario)
 
     def cadastrarUser(self):
-        # if self.txt_senha.text() != self. 
+        # if self.txt_senha.text() != self.
+
         nome = self.txt_nome.text()
         cpf = self.txt_cpf.text()
         telefone = self.txt_telefone.text()
-        dataNascimento = self.txt_dataNasc.text()
-        senhaDeAcesso = self.txt_senha.text()
+        data_Nasc = self.txt_dataNasc.text()
+        senha_Acess = self.txt_senha.text()
         pais = self.txt_pais.text()
         cidade = self.txt_cidade.text()
         estado = self.txt_estado.text()
 
-        db = BancoDeDados()
+        db = BancoPostgreSQL()
         db.conexao_banco.Conexao()
-        db.inserirUsuario(nome,cpf,telefone,dataNascimento,senhaDeAcesso,pais,cidade,estado)
+        db.inserirUsuario(nome,cpf,telefone,data_Nasc,senha_Acess,pais,cidade,estado)
         db.sairconexao_banco()
 
-        # msg = QMessageBox()
-        # msg.setIcon(QMessageBox.information)
-        # msg.setWindowTitle("Cadastro De Usuario")
-        # msg.setText("Cadastro Realizado com Sucesso!")
-        # msg.exec()
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.information)
+        msg.setWindowTitle("Cadastro De Usuario")
+        msg.setText("Cadastro Realizado com Sucesso!")
+        msg.exec()
 
 
     # def inserirUsuario(self):
