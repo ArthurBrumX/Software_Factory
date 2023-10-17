@@ -23,12 +23,11 @@ from Crud.Banco import *
 import pymysql.connections
 
 #importando as Bibliotecas que seram usadas
-from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox, QPushButton
+from PyQt6 import QApplication, QMainWindow,QtWidgets
 from telaMain import Ui_MainWindow
-import sqlite3
 import pymysql
 import sys
-import pandas as pd
+
 
 # Testando sem a importacao aq
 
@@ -55,6 +54,8 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         self.bnt_cadastrarUsuario.clicked.connect(self.inserirUsuario)
         self.bnt_cadastrarVeiculoo.clicked.connect(self.cad_veiculo)
         self.bnt_deletarUsuario.clicked.connect(self.deletar_usuario)
+        self.btn_deletarVeiculo.clicked.connect(self.deletar_veiculo)
+        self.bnt_listaUser.clicked.connect(self.listarNaTela)
 
         # self.tabelaListaDeUsuarios.setCollumnWidth(self.tabelaListaDeUsuarios)
 
@@ -90,23 +91,44 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         print(sql)
 
     # #Funcao para deletar Usuario
-    def deletar_usuario(self, id_usuario):
+    def deletar_usuario(self):
 
         deletarUser = self.txt_DeletarIDUser.text()
         classeBanco = Banco()
-        sql = f"DELETE FROM usuario WHERE id = {deletarUser}"
+
+        sql = f"DELETE FROM usuario WHERE id_usuario = {deletarUser}"
         response = classeBanco.execute_query(sql)
-        Banco.commit()
-        
-        if response:
-            print(f"Usuário com ID {deletarUser} foi excluído com sucesso.")
-        else:
-            print(f"Falha ao excluir o usuário com ID {deletarUser}.")
+        print(sql)
 
-            # Para usar a função, você precisa passar o ID do usuário que deseja excluir, por exemplo:
-            # deletar_usuario(1)  # Isso excluirá o usuário com ID 1
+    # Funcao para deletar veiculo
+    def deletar_veiculo(self):
 
-        
+        deletarVeic = self.txt_idVeiculo.text()
+        classeBanco = Banco()
+
+        sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}"
+        response = classeBanco.execute_query(sql)
+        print(sql)
+
+    # Funcao para listar clientes
+    def listarNaTela(self):
+        #Mostrar os dados do banco de dados
+
+        classeBanco = Banco()
+        sql = "SELECT * FROM usuario"
+        response = classeBanco.execute_query(sql)
+        print(response)
+
+        for usuario in response:
+            item = QtWidgets.QTreeWidgetItem()
+            item.setText(0, str(usuario["id"]))  # Define o ID do usuário na primeira coluna
+            item.setText(1, usuario["nome"])  # Define o nome do usuário na segunda coluna
+            item.setText(2, usuario["email"])  # Define o email do usuário na terceira coluna
+
+        for linha in range(0,len(response)):
+            for coluna in range (0,9):
+                window.tabelaListaDeUsuarios.setItem(linha,coluna,QtWidgets.QTreeWidget(str(response[linha][coluna])))
+   
 
 # Iniciando a Tela Principal
 if __name__ == "__main__":
