@@ -23,7 +23,7 @@ from Crud.Banco import *
 import pymysql.connections
 
 #importando as Bibliotecas que seram usadas
-from PyQt6 import QApplication, QMainWindow,QtWidgets
+from PyQt6.QtWidgets import QApplication, QMainWindow
 from telaMain import Ui_MainWindow
 import pymysql
 import sys
@@ -106,8 +106,8 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         deletarVeic = self.txt_idVeiculo.text()
         classeBanco = Banco()
 
-        sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}"
-        response = classeBanco.execute_query(sql)
+        sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}" # uma variavel que contem um comando sql
+        response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
         print(sql)
 
     # Funcao para listar clientes
@@ -119,15 +119,15 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         response = classeBanco.execute_query(sql)
         print(response)
 
-        for usuario in response:
-            item = QtWidgets.QTreeWidgetItem()
-            item.setText(0, str(usuario["id"]))  # Define o ID do usuário na primeira coluna
-            item.setText(1, usuario["nome"])  # Define o nome do usuário na segunda coluna
-            item.setText(2, usuario["email"])  # Define o email do usuário na terceira coluna
+    #     for usuario in response:
+    #         item = QtWidgets.QTreeWidgetItem()
+    #         item.setText(0, str(usuario["id"]))  # Define o ID do usuário na primeira coluna
+    #         item.setText(1, usuario["nome"])  # Define o nome do usuário na segunda coluna
+    #         item.setText(2, usuario["email"])  # Define o email do usuário na terceira coluna
 
-        for linha in range(0,len(response)):
-            for coluna in range (0,9):
-                window.tabelaListaDeUsuarios.setItem(linha,coluna,QtWidgets.QTreeWidget(str(response[linha][coluna])))
+        # for linha in range(0,len(response)):
+        #     for coluna in range (0,9):
+        #         window.tabelaListaDeUsuarios.setItem(linha,coluna,QtWidgets.QTreeWidget(str(response[linha][coluna])))
    
 
 # Iniciando a Tela Principal
