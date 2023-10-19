@@ -23,7 +23,8 @@ from Crud.Banco import *
 import pymysql.connections
 
 #importando as Bibliotecas que seram usadas
-from PyQt6.QtWidgets import QApplication, QMainWindow
+from PyQt6.QtWidgets import QApplication, QMainWindow,QStackedWidget,QLabel
+import sqlite3
 from telaMain import Ui_MainWindow
 import pymysql
 import sys
@@ -34,6 +35,9 @@ import sys
     # Criando um instaciamento (chamando o banco)
     # db = BancoDeDados()
     # db.conexao_banco.Conexao()
+
+#instanciamento do banco de dados
+classeBanco = Banco()
 
 # Criando a classe das Telas
 class telaPrincipal(QMainWindow, Ui_MainWindow):
@@ -114,20 +118,13 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
     def listarNaTela(self):
         #Mostrar os dados do banco de dados
 
-        classeBanco = Banco()
-        sql = "SELECT * FROM usuario"
-        response = classeBanco.execute_query(sql)
-        print(response)
+        # classeBanco = Banco()
+        # sql = "SELECT * FROM usuario"
+        # response = classeBanco.execute_query(sql)
+        # print(response)
 
-    #     for usuario in response:
-    #         item = QtWidgets.QTreeWidgetItem()
-    #         item.setText(0, str(usuario["id"]))  # Define o ID do usuário na primeira coluna
-    #         item.setText(1, usuario["nome"])  # Define o nome do usuário na segunda coluna
-    #         item.setText(2, usuario["email"])  # Define o email do usuário na terceira coluna
+        cn = pymysql.connect("Banco.db")
 
-        # for linha in range(0,len(response)):
-        #     for coluna in range (0,9):
-        #         window.tabelaListaDeUsuarios.setItem(linha,coluna,QtWidgets.QTreeWidget(str(response[linha][coluna])))
    
 
 # Iniciando a Tela Principal
