@@ -23,6 +23,7 @@ from Crud.Banco import *
 import pymysql.connections
 
 #importando as Bibliotecas que seram usadas
+from PyQt6 import QtWidgets
 from PyQt6.QtWidgets import QApplication, QMainWindow,QStackedWidget,QLabel
 import sqlite3
 from telaMain import Ui_MainWindow
@@ -59,7 +60,8 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         self.bnt_cadastrarVeiculoo.clicked.connect(self.cad_veiculo)
         self.bnt_deletarUsuario.clicked.connect(self.deletar_usuario)
         self.btn_deletarVeiculo.clicked.connect(self.deletar_veiculo)
-        self.bnt_listaUser.clicked.connect(self.listarNaTela)
+        self.bnt_listaUser.clicked.connect(self.listarUsuario)
+        self.bnt_listaVeiculo.clicked.connect(self.listarVeiculo)
 
         # self.tabelaListaDeUsuarios.setCollumnWidth(self.tabelaListaDeUsuarios)
 
@@ -115,15 +117,36 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         print(sql)
 
     # Funcao para listar clientes
-    def listarNaTela(self):
-        #Mostrar os dados do banco de dados
+    def listarUsuario(self):
+        # Mostrar os dados do banco de dados
 
-        # classeBanco = Banco()
-        # sql = "SELECT * FROM usuario"
-        # response = classeBanco.execute_query(sql)
-        # print(response)
+        classeBanco = Banco()
+        sql = "SELECT * FROM usuario"
+        response = classeBanco.execute_query(sql)
+        print(response)
 
-        cn = pymysql.connect("Banco.db")
+        self.tabelaListaDeUsuarios.setRowCount(len(response))
+        self.tabelaListaDeUsuarios.setColumnCount(9)
+
+        for linha in range(0, len(response)):
+            for coluna in range(0,9):
+                self.tabelaListaDeUsuarios.setItem(linha,coluna,QtWidgets.QTableWidgetItem(str(response[linha][coluna])))
+
+    #funcao Listar Veiculo
+    def listarVeiculo(self):
+        # Mostrar os dados do banco de dados
+
+        classeBanco = Banco()
+        sql = "SELECT * FROM veiculo"
+        response = classeBanco.execute_query(sql)
+        print(response)
+
+        self.tabelaListaDeVeiculos.setRowCount(len(response))
+        self.tabelaListaDeVeiculos.setColumnCount(7)
+
+        for linha in range(0, len(response)):
+            for coluna in range(0,7):
+                self.tabelaListaDeVeiculos.setItem(linha,coluna,QtWidgets.QTableWidgetItem(str(response[linha][coluna])))
 
    
 
