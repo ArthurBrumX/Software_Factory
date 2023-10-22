@@ -29,3 +29,33 @@ create table veiculo(
   valor_mensal varchar(255),
   valor_compra varchar(100)
 );
+
+create table veiculoAlugadosDiaria(
+  id_veiculo INT AUTO_INCREMENT PRIMARY KEY,
+  marca varchar(255),
+  modelo varchar(11),
+  cor varchar(11),
+  valor_diario varchar(20),
+  valor_mensal varchar(255),
+  valor_compra varchar(100)
+);
+
+create table alugarVeiculoMensal(
+	id_veiculo INT AUTO_INCREMENT PRIMARY KEY,
+  marca varchar(255),
+  modelo varchar(11),
+  cor varchar(11),
+  valor_diario varchar(20),
+  valor_mensal varchar(255),
+  valor_compra varchar(100)
+);
+
+create table comprarVeiculo(
+	id_veiculo INT AUTO_INCREMENT PRIMARY KEY,
+  marca varchar(255),
+  modelo varchar(11),
+  cor varchar(11),
+  valor_diario varchar(20),
+  valor_mensal varchar(255),
+  valor_compra varchar(100)
+);
