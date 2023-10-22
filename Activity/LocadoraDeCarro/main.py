@@ -62,9 +62,9 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         self.btn_deletarVeiculo.clicked.connect(self.deletar_veiculo)
         self.bnt_listaUser.clicked.connect(self.listarUsuario)
         self.bnt_listaVeiculo.clicked.connect(self.listarVeiculo)
-        # self.btn_alugarDiaria.clicked.connect(self.alugarDiaria)
-        # self.btn_alugarMensal.clicked.connect(self.alugarMensal)
-        # self.btn_comprar.clicked.connect(self.comprarVeiculo)
+        self.btn_alugarDiaria.clicked.connect(self.alugarVeicDiaria)
+        self.btn_alugarMensal.clicked.connect(self.alugarVeicMesal)
+        self.btn_comprar.clicked.connect(self.comprarVeic)
 
         # self.tabelaListaDeUsuarios.setCollumnWidth(self.tabelaListaDeUsuarios)
 
@@ -83,6 +83,7 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         sql = f"INSERT INTO usuario(nome,cpf,telefone,nasc,senha,pais,cidade,estado) VALUES('{nome}','{cpf}','{tel}','{nasc}','{senha}','{pais}','{cidade}','{estado}')"
         response = classeBanco.execute_query(sql)
         print(sql)
+        print("Usuario Cadastrado Com Sucesso!")
     
     #Funcao para cadastrar o veiculo
     def cad_veiculo(self):
@@ -98,6 +99,7 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         sql = f"INSERT INTO veiculo(marca, modelo,cor,valor_diario,valor_mensal,valor_compra) VALUES('{marca}','{mod}','{cor}','{diario}','{mensal}','{valorCompra}')"
         response = classeBanco.execute_query(sql)
         print(sql)
+        print("Veiculo Cadastrado Com Sucecsso")
 
     # #Funcao para deletar Usuario
     def deletar_usuario(self):
@@ -108,6 +110,7 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         sql = f"DELETE FROM usuario WHERE id_usuario = {deletarUser}"
         response = classeBanco.execute_query(sql)
         print(sql)
+        print("Usuario Deletado Com Sucesso!")
 
     # Funcao para deletar veiculo
     def deletar_veiculo(self):
@@ -118,6 +121,7 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}" # uma variavel que contem um comando sql
         response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
         print(sql)
+        print("Veiculo Deletado Com Sucesso!")
 
     # Funcao para listar clientes
     def listarUsuario(self):
@@ -151,35 +155,77 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
             for coluna in range(0,7):
                 self.tabelaListaDeVeiculos.setItem(linha,coluna,QtWidgets.QTableWidgetItem(str(response[linha][coluna])))
 
-    # def alugarDiaria(self):
-    #     alugaDi = self.txt_idVeiculo.text()
-    #     classeBanco = Banco()
-
-    #     sql1 = f"INSERT INTO veiculoAlugadosDiaria {alugaDi}"
-    #     sql2 = f"SELECT {alugaDi}"
-    #     sql3 = f"FROM veiculo"
-    #     sql4 = f"WHERE id_veiculo = {alugaDi};"
-    #     sql5 = f"DELETE FROM veiculo WHERE id_veiculo = {alugaDi}" # uma variavel que contem um comando sql
-    #     sql6 = f"WHERE id_veiculo = {alugaDi};"
-    #     response = classeBanco.execute_query(sql1,sql2,sql3,sql4,sql5,sql6) # execute_query() - executa um comando sql
-    #     print(sql1,sql2,sql3,sql4,sql5,sql6)
-
-    # def alugarMensal(self):
-    #     deletarVeic = self.txt_idVeiculo.text()
-    #     classeBanco = Banco()
-
-    #     sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}" # uma variavel que contem um comando sql
-    #     response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
-    #     print(sql)
-
-    # def comprarVeiculo(self):
-        deletarVeic = self.txt_idVeiculo.text()
+    #Funcao Alugar o carro diariamente
+    def alugarVeicDiaria(self):
+        alugaDi = self.txt_idVeiculo.text()
         classeBanco = Banco()
 
-        sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}" # uma variavel que contem um comando sql
-        response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
-        print(sql)
+        # inserção dos dados na tabela de aluguel
+        sql_insercao = f"INSERT INTO veiculoAlugadosDiaria (id_veiculo) SELECT {alugaDi} FROM veiculo WHERE id_veiculo = {alugaDi};"
+        
+        # selecionando os dados que acabou de ser inserido
+        sql_selecao = f"SELECT {alugaDi} FROM veiculoAlugadosDiaria;"
 
+        # excluir o veículo da tabela de veículos
+        sql_exclusao = f"DELETE FROM veiculo WHERE id_veiculo = {alugaDi};"
+
+        # Executando a consulta SQL
+        response = classeBanco.execute_query(sql_insercao)
+        response = classeBanco.execute_query(sql_selecao)
+        response = classeBanco.execute_query(sql_exclusao)
+        
+        print(sql_insercao)
+        print(sql_selecao)
+        print(sql_exclusao)
+        print("Veiculo Alugado Diariamente com Sucesso! Consulte a Tabela!")
+
+    # #Funcao Alugar o carro Mensalmente
+    def alugarVeicMesal(self):
+        alugaMensal = self.txt_idVeiculo.text()
+        classeBanco = Banco()
+
+        # inserção dos dados na tabela de aluguel
+        sql_insercao = f"INSERT INTO alugarVeiculoMensal (id_veiculo) SELECT {alugaMensal} FROM veiculo WHERE id_veiculo = {alugaMensal};"
+        
+        # selecionando os dados que acabou de ser inserido
+        sql_selecao = f"SELECT {alugaMensal} FROM alugarVeiculoMensal;"
+
+        # excluir o veículo da tabela de veículos
+        sql_exclusao = f"DELETE FROM veiculo WHERE id_veiculo = {alugaMensal};"
+
+        # Executando a consulta SQL
+        response = classeBanco.execute_query(sql_insercao)
+        response = classeBanco.execute_query(sql_selecao)
+        response = classeBanco.execute_query(sql_exclusao)
+
+        print(sql_insercao)
+        print(sql_selecao)
+        print(sql_exclusao)
+        print("Veiculo Alugado Mensalmente com Sucesso! Consulte a Tabela!")
+
+    # #Funcao para comprar o carro
+    def comprarVeic(self):
+        comprarVeiculo = self.txt_idVeiculo.text()
+        classeBanco = Banco()
+
+        # inserção dos dados na tabela de aluguel
+        sql_insercao = f"INSERT INTO comprarVeiculo (id_veiculo) SELECT {comprarVeiculo} FROM veiculo WHERE id_veiculo = {comprarVeiculo};"
+        
+        # selecionando os dados que acabou de ser inserido
+        sql_selecao = f"SELECT {comprarVeiculo} FROM comprarVeiculo;"
+
+        # excluir o veículo da tabela de veículos
+        sql_exclusao = f"DELETE FROM veiculo WHERE id_veiculo = {comprarVeiculo};"
+
+        # Executando a consulta SQL
+        response = classeBanco.execute_query(sql_insercao)
+        response = classeBanco.execute_query(sql_selecao)
+        response = classeBanco.execute_query(sql_exclusao)
+        
+        print(sql_insercao)
+        print(sql_selecao)
+        print(sql_exclusao)
+        print("Veiculo Comprado com Sucesso! Consulte a Tabela!")
 # Iniciando a Tela Principal
 if __name__ == "__main__":
     app = QApplication(sys.argv)
