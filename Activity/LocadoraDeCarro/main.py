@@ -62,9 +62,9 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         self.btn_deletarVeiculo.clicked.connect(self.deletar_veiculo)
         self.bnt_listaUser.clicked.connect(self.listarUsuario)
         self.bnt_listaVeiculo.clicked.connect(self.listarVeiculo)
-        self.btn_alugarDiaria.clicked.connect(self.alugarDiaria)
-        self.btn_alugarMensal.clicked.connect(self.alugarMensal)
-        self.btn_comprar.clicked.connect(self.comprarVeiculo)
+        # self.btn_alugarDiaria.clicked.connect(self.alugarDiaria)
+        # self.btn_alugarMensal.clicked.connect(self.alugarMensal)
+        # self.btn_comprar.clicked.connect(self.comprarVeiculo)
 
         # self.tabelaListaDeUsuarios.setCollumnWidth(self.tabelaListaDeUsuarios)
 
@@ -135,7 +135,7 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
             for coluna in range(0,9):
                 self.tabelaListaDeUsuarios.setItem(linha,coluna,QtWidgets.QTableWidgetItem(str(response[linha][coluna])))
 
-    #funcao Listar Veiculo
+    # funcao Listar Veiculo
     def listarVeiculo(self):
         # Mostrar os dados do banco de dados
 
@@ -151,23 +151,28 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
             for coluna in range(0,7):
                 self.tabelaListaDeVeiculos.setItem(linha,coluna,QtWidgets.QTableWidgetItem(str(response[linha][coluna])))
 
-    def alugarDiaria(self):
-        alugaDi = self.txt_idVeiculo.text()
-        classeBanco = Banco()
+    # def alugarDiaria(self):
+    #     alugaDi = self.txt_idVeiculo.text()
+    #     classeBanco = Banco()
 
-        sql = f"DELETE FROM veiculo WHERE id_veiculo = {alugaDi}" # uma variavel que contem um comando sql
-        response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
-        print(sql)
+    #     sql1 = f"INSERT INTO veiculoAlugadosDiaria {alugaDi}"
+    #     sql2 = f"SELECT {alugaDi}"
+    #     sql3 = f"FROM veiculo"
+    #     sql4 = f"WHERE id_veiculo = {alugaDi};"
+    #     sql5 = f"DELETE FROM veiculo WHERE id_veiculo = {alugaDi}" # uma variavel que contem um comando sql
+    #     sql6 = f"WHERE id_veiculo = {alugaDi};"
+    #     response = classeBanco.execute_query(sql1,sql2,sql3,sql4,sql5,sql6) # execute_query() - executa um comando sql
+    #     print(sql1,sql2,sql3,sql4,sql5,sql6)
 
-    def alugarMensal(self):
-        deletarVeic = self.txt_idVeiculo.text()
-        classeBanco = Banco()
+    # def alugarMensal(self):
+    #     deletarVeic = self.txt_idVeiculo.text()
+    #     classeBanco = Banco()
 
-        sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}" # uma variavel que contem um comando sql
-        response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
-        print(sql)
+    #     sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}" # uma variavel que contem um comando sql
+    #     response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
+    #     print(sql)
 
-    def comprarVeiculo(self):
+    # def comprarVeiculo(self):
         deletarVeic = self.txt_idVeiculo.text()
         classeBanco = Banco()
 
