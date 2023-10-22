@@ -62,6 +62,9 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         self.btn_deletarVeiculo.clicked.connect(self.deletar_veiculo)
         self.bnt_listaUser.clicked.connect(self.listarUsuario)
         self.bnt_listaVeiculo.clicked.connect(self.listarVeiculo)
+        self.btn_alugarDiaria.clicked.connect(self.alugarDiaria)
+        self.btn_alugarMensal.clicked.connect(self.alugarMensal)
+        self.btn_comprar.clicked.connect(self.comprarVeiculo)
 
         # self.tabelaListaDeUsuarios.setCollumnWidth(self.tabelaListaDeUsuarios)
 
@@ -148,7 +151,29 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
             for coluna in range(0,7):
                 self.tabelaListaDeVeiculos.setItem(linha,coluna,QtWidgets.QTableWidgetItem(str(response[linha][coluna])))
 
-   
+    def alugarDiaria(self):
+        alugaDi = self.txt_idVeiculo.text()
+        classeBanco = Banco()
+
+        sql = f"DELETE FROM veiculo WHERE id_veiculo = {alugaDi}" # uma variavel que contem um comando sql
+        response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
+        print(sql)
+
+    def alugarMensal(self):
+        deletarVeic = self.txt_idVeiculo.text()
+        classeBanco = Banco()
+
+        sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}" # uma variavel que contem um comando sql
+        response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
+        print(sql)
+
+    def comprarVeiculo(self):
+        deletarVeic = self.txt_idVeiculo.text()
+        classeBanco = Banco()
+
+        sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}" # uma variavel que contem um comando sql
+        response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
+        print(sql)
 
 # Iniciando a Tela Principal
 if __name__ == "__main__":

@@ -3,8 +3,11 @@
 create database locadora_brum;
 drop database locadora_brum;
 
-select *  from usuario;
-select *  from veiculo;
+select * from usuario;
+select * from veiculo;
+select * from veiculoAlugadosDiaria;
+select * from alugarVeiculoMensal;
+select * from comprarVeiculo;
 
 use locadora_brum;
 
@@ -22,6 +25,37 @@ create table usuario(
 
 create table veiculo(
   id_veiculo INT AUTO_INCREMENT PRIMARY KEY,
+  marca varchar(255),
+  modelo varchar(11),
+  cor varchar(11),
+  valor_diario varchar(20),
+  valor_mensal varchar(255),
+  valor_compra varchar(100)
+);
+
+create table veiculoAlugadosDiaria(
+  id_veiculo INT AUTO_INCREMENT PRIMARY KEY,
+  marca varchar(255),
+  modelo varchar(11),
+  cor varchar(11),
+  valor_diario varchar(20),
+  valor_mensal varchar(255),
+  valor_compra varchar(100)
+);
+
+
+create table alugarVeiculoMensal(
+	id_veiculo INT AUTO_INCREMENT PRIMARY KEY,
+  marca varchar(255),
+  modelo varchar(11),
+  cor varchar(11),
+  valor_diario varchar(20),
+  valor_mensal varchar(255),
+  valor_compra varchar(100)
+);
+
+create table comprarVeiculo(
+	id_veiculo INT AUTO_INCREMENT PRIMARY KEY,
   marca varchar(255),
   modelo varchar(11),
   cor varchar(11),
