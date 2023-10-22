@@ -1,12 +1,15 @@
 # codigo para executar no sql
 
-# select *  from usuario;
-# select *  from veiculo;
-
-
 create database locadora_brum;
+drop database locadora_brum;
+
+select *  from usuario;
+select *  from veiculo;
+
 use locadora_brum;
+
 create table usuario(
+	id_usuario INT AUTO_INCREMENT PRIMARY KEY,
 	nome varchar(255),
     cpf varchar(11),
     telefone varchar(11),
@@ -16,8 +19,9 @@ create table usuario(
     cidade varchar(255),
     estado varchar(255)
 );
- 
+
 create table veiculo(
+  id_veiculo INT AUTO_INCREMENT PRIMARY KEY,
   marca varchar(255),
   modelo varchar(11),
   cor varchar(11),

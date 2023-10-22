@@ -10,37 +10,6 @@
 # O sistema deverá permitir cadastrar os veículos e em qual categoria ele se enquadra. 
 # (Cadastrar, R(mostrar os dados), U(editar os dados), D(deletar se o carro nunca foi alugado ou vendido)). 
 # Cadastrar usuário para realizar a venda ou a locação. 
-#==================================================================================================================
-
-# codigo para executar no sql
-
-# select *  from usuario;
-# select *  from veiculo;
-
-
-# create database locadora_brum;
-
-# use locadora_brum;
-
-# create table usuario(
-# 	nome varchar(255),
-#     cpf varchar(11),
-#     telefone varchar(11),
-#     nasc varchar(20),
-#     senha varchar(255),
-#     pais varchar(100),
-#     cidade varchar(255),
-#     estado varchar(255)
-# );
- 
-# create table veiculo(
-#   marca varchar(255),
-#   modelo varchar(11),
-#   cor varchar(11),
-#   valor_diario varchar(20),
-#   valor_mensal varchar(255),
-#   valor_compra varchar(100)
-# );
 
 #==================================================================================================================
 
@@ -54,18 +23,22 @@ from Crud.Banco import *
 import pymysql.connections
 
 #importando as Bibliotecas que seram usadas
-from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox, QPushButton
-from arquivo import Ui_MainWindow
+from PyQt6 import QtWidgets
+from PyQt6.QtWidgets import QApplication, QMainWindow,QStackedWidget,QLabel
 import sqlite3
+from telaMain import Ui_MainWindow
 import pymysql
 import sys
-import pandas as pd
+
 
 # Testando sem a importacao aq
 
     # Criando um instaciamento (chamando o banco)
     # db = BancoDeDados()
     # db.conexao_banco.Conexao()
+
+#instanciamento do banco de dados
+classeBanco = Banco()
 
 # Criando a classe das Telas
 class telaPrincipal(QMainWindow, Ui_MainWindow):
@@ -82,9 +55,13 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         self.bnt_listaVeiculo.clicked.connect(lambda: self.janelaDeNavegacao.setCurrentWidget(self.page_listaDeVeiculos))
         # Final das Conecoes com as telas (menu)
 
+        # Executando Fucnoes
         self.bnt_cadastrarUsuario.clicked.connect(self.inserirUsuario)
         self.bnt_cadastrarVeiculoo.clicked.connect(self.cad_veiculo)
-        # self.bnt_deletarUsuario.clicked.connect(self.deletarUser)
+        self.bnt_deletarUsuario.clicked.connect(self.deletar_usuario)
+        self.btn_deletarVeiculo.clicked.connect(self.deletar_veiculo)
+        self.bnt_listaUser.clicked.connect(self.listarUsuario)
+        self.bnt_listaVeiculo.clicked.connect(self.listarVeiculo)
 
         # self.tabelaListaDeUsuarios.setCollumnWidth(self.tabelaListaDeUsuarios)
 
@@ -119,96 +96,59 @@ class telaPrincipal(QMainWindow, Ui_MainWindow):
         response = classeBanco.execute_query(sql)
         print(sql)
 
-        deletarUsuario = self.bnt_deletarUsuario.text()                                                       
+    # #Funcao para deletar Usuario
+    def deletar_usuario(self):
+
+        deletarUser = self.txt_DeletarIDUser.text()
         classeBanco = Banco()
 
-        sql = f"DELETE FROM usuario WHERE nome = '{deletarUsuario}'"
+        sql = f"DELETE FROM usuario WHERE id_usuario = {deletarUser}"
         response = classeBanco.execute_query(sql)
         print(sql)
 
-    #Funcao para tabelaListaDeUsuarios
-    # def tabelaListaDeUsuarios(self):
-    #     # Suponha que você já tenha obtido os dados de carros e os armazenado em uma lista chamada 'dados'
+    # Funcao para deletar veiculo
+    def deletar_veiculo(self):
 
-    #     # Configura o número de linhas e colunas na tabela
-    #     self.listaCarros.lista_carros.setRowCount(len(0,400))
-    #     self.listaCarros.lista_carros.setColumnCount(9)
+        deletarVeic = self.txt_idVeiculo.text()
+        classeBanco = Banco()
 
-    #     # Conecta os botões aos slots
-    #     self.listaCarros.novo_carro.clicked.connect(self.to_novo_carro)
-    #     self.listaCarros.cad_user.clicked.connect(self.to_cadastrar_usuario)
-    #     self.listaCarros.btn_sair.clicked.connect(self.sair)
+        sql = f"DELETE FROM veiculo WHERE id_veiculo = {deletarVeic}" # uma variavel que contem um comando sql
+        response = classeBanco.execute_query(sql) # execute_query() - executa um comando sql
+        print(sql)
 
-    #     # Define os nomes das colunas
-    #     nomes_colunas = ["ID", "NOME", "MODELO", "STATUS", "COR", "PRECO", "CATEGORIA", "", ""]
-    #     self.listaCarros.lista_carros.setHorizontalHeaderLabels(nomes_colunas)
+    # Funcao para listar clientes
+    def listarUsuario(self):
+        # Mostrar os dados do banco de dados
 
-    #     # Aplica estilos à tabela
-    #     self.listaCarros.lista_carros.setStyleSheet("QTableView::item:selected { color:#0f0; background:#000000; font-weight:900; }"
-    #                                             "QTableCornerButton::section { background-color:#232326; }" 
-    #                                             "QHeaderView::section { color:#fff; background-color:#232326; }"
-    #                                             "QTableView::item { color:#fff }")
+        classeBanco = Banco()
+        sql = "SELECT * FROM usuario"
+        response = classeBanco.execute_query(sql)
+        print(response)
 
-    #     # Preenche a tabela com os dados dos carros e adiciona botões "Editar" e "Excluir"
-    #     for linha in range(0, len(veiculo)):
-    #         for coluna in range(0, 7):
-    #             self.listaCarros.lista_carros.setItem(linha, coluna, QtWidgets.QTableWidgetItem(str(dados[linha][coluna])))
-    #             if coluna == 6:
-    #                 btn_editar = QtWidgets.QPushButton("Editar")
-    #                 btn_editar.clicked.connect(lambda state, linha=linha: self.to_editar_carro(dados[linha][0]))
-    #                 btn_editar.setStyleSheet("color: #fff; background-color: #045033")
-    #                 self.listaCarros.lista_carros.setCellWidget(linha, coluna + 1, btn_editar)
-                    
-    #                 if obCarro.carro_v_a(dados[linha][0]) == False:
-    #                     btn_excluir = QtWidgets.QPushButton("Excluir")
-    #                     btn_excluir.clicked.connect(lambda state, linha=linha: self.excluir_carro(dados[linha][0]))
-    #                     btn_excluir.setStyleSheet("color: #fff; background-color: #670503")
-    #                     self.listaCarros.lista_carros.setCellWidget(linha, coluna + 2, btn_excluir)
+        self.tabelaListaDeUsuarios.setRowCount(len(response))
+        self.tabelaListaDeUsuarios.setColumnCount(9)
 
+        for linha in range(0, len(response)):
+            for coluna in range(0,9):
+                self.tabelaListaDeUsuarios.setItem(linha,coluna,QtWidgets.QTableWidgetItem(str(response[linha][coluna])))
 
-    
+    #funcao Listar Veiculo
+    def listarVeiculo(self):
+        # Mostrar os dados do banco de dados
 
-    #==================================================================================================================
-    # Não Funcionou
-    # Algum dia pode ser que de pra usar
+        classeBanco = Banco()
+        sql = "SELECT * FROM veiculo"
+        response = classeBanco.execute_query(sql)
+        print(response)
 
-    # def cadastrarUser(self):
-    #     # if self.txt_senha.text() != self.
+        self.tabelaListaDeVeiculos.setRowCount(len(response))
+        self.tabelaListaDeVeiculos.setColumnCount(7)
 
-    #     nome = self.txt_nome.text()
-    #     cpf = self.txt_cpf.text()
-    #     telefone = self.txt_telefone.text()
-    #     data_Nasc = self.txt_dataNasc.text()
-    #     senha_Acess = self.txt_senha.text()
-    #     pais = self.txt_pais.text()
-    #     cidade = self.txt_cidade.text()
-    #     estado = self.txt_estado.text()
+        for linha in range(0, len(response)):
+            for coluna in range(0,7):
+                self.tabelaListaDeVeiculos.setItem(linha,coluna,QtWidgets.QTableWidgetItem(str(response[linha][coluna])))
 
-    #     db = telaPrincipal()
-    #     db.conexao_banco.Conexao()
-    #     db.inserirUsuario(nome,cpf,telefone,data_Nasc,senha_Acess,pais,cidade,estado)
-    #     db.sairconexao_banco()
-
-    #     msg = QMessageBox()
-    #     msg.setIcon(QMessageBox.information)
-    #     msg.setWindowTitle("Cadastro De Usuario")
-    #     msg.setText("Cadastro Realizado com Sucesso!")
-    #     msg.exec()
-
-    # def inserirUsuario(self):
-    #     self.bnt_cadastrarUsuario.clicked.connect(self.inserirUsuario)
-    #     try:
-    #         cursor = self.conexao.cursor()
-    #         cursor.execute("""
-    #             INSERT INTO usuarios(cpf,telefone,data_Nasc,senha_Acess,pais,cidade,estado) VALUES(%s,%s,%s,%s,%s,%s,%s)
-    #         """,(self.nome,self.cpf,self.telefone,self.dataNascimento,self.senha_Acess,self.pais,self.cidade,self.estado))
-
-    #         self.conexao.commit() 
-    #         print("Usuario Adcionado!")   
-
-    #     except AttributeError:
-    #         print("Faça a Conexao!")
-    #==================================================================================================================
+   
 
 # Iniciando a Tela Principal
 if __name__ == "__main__":

@@ -47,9 +47,9 @@ def listar():
     listarProdutos.TableWidget.setRowCount(len(dados_recebidos))
     listarProdutos.tableWidget.setColumnCount(5)
 
-    for i in range(0, len(dados_recebidos)):
+    for linha in range(0, len(dados_recebidos)):
         for coluna in range(0,5):
-            listaProdutos.tableWidget.setItem(linha,coluna,QTWidgets, QTableWidgetItem(str(dados_recebidos[linha][coluna])))
+            listaProdutos.tableWidget.setItem(linha,coluna,QTWidgets.QTableWidgetItem(str(dados_recebidos[linha][coluna])))
 
 app = QTWidgets.QApplication([])
 produtos = uic.loadUI("#nome do arquivo do qtdesgner") # ele que vai chama a janela pra abrir
