@@ -1,6 +1,8 @@
 <?php
 require_once("../Menu Lateral/MenuGestor.php");
-require_once("config.php")
+require_once("config.php");
+require_once("../BancoDeDados/ConexaoBancoDeDados.php");
+require_once("../BancoDeDados/Config.php");
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +11,7 @@ require_once("config.php")
           <meta charset="utf-8">
           <title>Index</title>
           <link rel="stylesheet" href="../Menu Lateral/Menu.css">
-          <link rel="stylesheet" href="Styles/General_Screen_6.css">
+          <link rel="stylesheet" href="Styles/General_Screen_7.css">
           <!-- <link rel="stylesheet" href="Styles/Screen-14-15-16_6.css"> -->
           <!-- <link rel="stylesheet" href="Styles/Screen-23_6.css"> -->
           <!-- <link rel="stylesheet" href="Styles/Screen-cell_6.css"> -->
