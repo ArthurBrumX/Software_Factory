@@ -1,9 +1,7 @@
 <?php
-    require_once("./AZ-coin/Includes/menuLateral/Home.php");
-    require_once("./AZ-coin/Includes/menuLateral/MenuGestor.php");
-    require_once("./AZ-coin/Includes/menuLateral/Saldos.php");
+   require __DIR__.'/header.php'; 
 ?>
-
+</head>
 <body class="home">
     <main class="Conteiner-principal">
         <div class="conteiner-titulo">

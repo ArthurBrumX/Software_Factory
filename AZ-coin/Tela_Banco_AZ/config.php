@@ -1,4 +1,5 @@
 <?php
+
 $dbHost = 'localhost';
 $dbName = 'azcoin';// Mudar para AZMerit !!
 $dbUser = 'postgres';
