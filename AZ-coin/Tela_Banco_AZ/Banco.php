@@ -1,8 +1,9 @@
 <?php
-    // require_once("../Menu Lateral/MenuGestor.php");
-    // require_once("config.php");
-    // require_once("../BancoDeDados/ConexaoBancoDeDados.php");
-    // require_once("../BancoDeDados/Config.php");
+    require_once("../Includes/menuLateral/MenuGestor.php");
+    require_once("../Includes/menuLateral/Home.php");
+    require_once("config.php");
+    require_once("../BancoDeDados/ConexaoBancoDeDados.php");
+    require_once("../BancoDeDados/Config.php");
 ?>
 
 <!DOCTYPE html>
