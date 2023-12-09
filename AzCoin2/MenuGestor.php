@@ -3,7 +3,7 @@
     <head>
           <meta charset="utf-8">
           <title>Index</title>
-          <link rel="stylesheet" href="Menu.css">
+          <link rel="stylesheet" href="Style/Menu.css">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tomorrow">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
     </head>
@@ -157,6 +157,6 @@
 
     <footer class="rodape"><p>2023 © AZ Tecnologia em Gestão. Todos os direitos reservados.</p></footer>
 
-    <script src="script.js"></script>
+    <script src="Style/Menu.js"></script>
 </body>
 </html>
