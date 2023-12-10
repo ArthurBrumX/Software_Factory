@@ -2,7 +2,7 @@
     "name":"azcoin/comp",
     "autoload":{
       "psr-4":{
-        "az\\":"AzCoin2"
+        "AzMert\\":"Software_Factory/AzCoin2/"
         }
     }
 }
