@@ -1,4 +1,4 @@
-<!-- um formulario para usar o cadastro no crud -->
+<!-- um formulario para usar o cadastro no crud (video) -->
 <main>
     <section>
         <a href="../index.php">

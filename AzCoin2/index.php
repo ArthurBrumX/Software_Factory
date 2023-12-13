@@ -12,4 +12,3 @@ include __DIR__.'/includes/MenuGestor.php';
 include __DIR__.'/includes/Header.php';
 include __DIR__.'/includes/Body.php';
 ?>
-
