@@ -1,8 +1,15 @@
 {
-    "name":"azcoin/comp",
-    "autoload":{
-      "psr-4":{
-        "AzMert\\":"Software_Factory/AzCoin2/"
+    "name": "fabrica.aluno2/az-coin2",
+    "autoload": {
+        "psr-4": {
+            "FabricaAluno2\\AzCoin2\\": "src/"
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "Arthur Brum Xavier",
+            "email": "arthurbrum0ficial22@gmail.com"
+        }
+    ],
+    "require": {}
 }
