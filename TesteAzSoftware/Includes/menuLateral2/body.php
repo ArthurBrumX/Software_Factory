@@ -1,4 +1,5 @@
-    
+    </head>
+    <body class="home">
     <img class="bg" src="img/Fundo.png" alt="">
     <nav class="menulateral closed">
         <ul class="listamenu">
