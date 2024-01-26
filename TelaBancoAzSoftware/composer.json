@@ -1,10 +1,15 @@
 {
-    "name":"az/azmerit",
+    "name": "user/tela-banco-az-software",
     "autoload": {
         "psr-4": {
-            "App\\":"app/"
+            "User\\TelaBancoAzSoftware\\": "src/"
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "Arthur Brum Xavier",
+            "email": "98411287+ArthurBrumX@users.noreply.github.com"
+        }
+    ],
+    "require": {}
 }
-
-// tentar desistalar e instalar novamente o json;
