@@ -7,3 +7,5 @@
     // include __DIR__.'/Includes/dataBase/config.php';//Conexao Com o Banco De Dados
     // include __DIR__.'/Includes/dataBase/AZMerit.sql';//Conexao Com o Banco De Dados
 
+    echo "<pre>"; print_r($_POST); echo "</pre>";exit;
+
