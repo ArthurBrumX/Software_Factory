@@ -6,4 +6,3 @@
     include __DIR__.'/Includes/principal/body.php';//Principal
     // include __DIR__.'/Includes/dataBase/config.php';//Conexao Com o Banco De Dados
     // include __DIR__.'/Includes/dataBase/AZMerit.sql';//Conexao Com o Banco De Dados
-
