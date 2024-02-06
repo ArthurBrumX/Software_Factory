@@ -635,3 +635,15 @@ INSERT INTO perfil_usuario (descricao_perfil) values ('Colaborador');
 
 INSERT INTO status_usuario (status, descricao_status_user) VALUES ('1', 'ATIVO');
 INSERT INTO status_usuario (status, descricao_status_user) VALUES ('0', 'INATIVO');
+
+
+
+ALTER TABLE status_feedback DROP COLUMN status;
+ 
+ALTER TABLE status_feedback RENAME COLUMN descricao_feedback TO status;
+ 
+INSERT INTO status_feedback (id_status_feedback, status) VALUES 
+(3, 'Aguardando aprovação'),
+(4, 'Aguardando ajustes');
+ 
+SELECT * FROM status_feedback;
