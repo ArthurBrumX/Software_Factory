@@ -1,8 +1,0 @@
-{
-    "name":"azcoin/comp",
-    "autoload":{
-      "psr-4":{
-        "AzCoin\\":"Software_Factory/AZ-coin"
-      }
-    }
-  }
