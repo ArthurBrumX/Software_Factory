@@ -1,0 +1,15 @@
+{
+    // vai ser responsavel por configurar o autoload do projeto
+    // vai usar o composer apenas para configurar o autoload
+    // composer é um gerenciador de dependencia
+    
+    // composer é um objeto
+    "name": "wdev/vagas",
+    "autoload":{ // autoload tambem é um objeto
+        "psr-4":{
+            // da pra passar todas as pastas e namespaces como um mapeamento
+            // Quando iniciar o psr-4 vai chamar a pasta "APP"e a pasta app vai chamar "
+            "App\\":  //Aqui vai ser qual pasta vai ser referenciada quando chama esse namespace
+        }
+    }
+}
